@@ -1,55 +1,53 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useLang } from "@/lib/i18n";
 import FadeUp from "@/components/FadeUp";
-import { rooms } from "@/lib/rooms";
+import { posts } from "@/lib/posts";
 
-export default function GalleryPage() {
-  const { lang } = useLang();
+export default function BlogPage() {
+  const { lang, tr } = useLang();
 
   return (
-    <div className="max-w-6xl mx-auto px-5 py-20">
+    <div className="max-w-4xl mx-auto px-5 py-20">
       <FadeUp>
         <p className="font-script text-3xl text-cherry text-center mb-2">Cherry Magic</p>
         {/* H1 — one per page */}
-        <h1 className="text-center mb-6">
-          {lang === "en" ? "A Look Inside, Room by Room" : "Ein Blick ins Innere, Raum für Raum"}
+        <h1 className="text-center mb-14">
+          {tr("blogTitle")}
         </h1>
-        <p className="font-body text-charcoal/70 text-center max-w-2xl mx-auto mb-16">
-          {lang === "en"
-            ? "Explore Cherry Magic Apartment in Sarajevo — from the bright living area to the quiet bedrooms, kitchen, bathroom and garden."
-            : "Entdecken Sie das Cherry Magic Apartment in Sarajevo — vom hellen Wohnbereich bis zu den ruhigen Schlafzimmern, der Küche, dem Bad und dem Garten."}
-        </p>
       </FadeUp>
 
-      <div className="space-y-24">
-        {rooms.map((room) => (
-          <section key={room.slug} id={room.slug} className="scroll-mt-24">
-            <FadeUp>
-              {/* H2 — room section heading, each room is its own SEO-targeted section */}
-              <h2 className="!text-2xl md:!text-3xl !text-cherry mb-3">
-                {lang === "en" ? room.titleEn : room.titleDe}
-              </h2>
-              <p className="font-body text-charcoal/80 max-w-2xl mb-8 leading-relaxed">
-                {lang === "en" ? room.descEn : room.descDe}
-              </p>
-            </FadeUp>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-              {room.images.map((src, i) => (
-                <FadeUp key={src} delay={i * 80}>
-                  <div className="relative aspect-[4/3] rounded-xl overflow-hidden bg-gray-300">
-                    <Image
-                      src={src}
-                      alt={`${lang === "en" ? room.titleEn : room.titleDe} ${i + 1}`}
-                      fill
-                      className="object-cover hover:scale-105 transition-transform duration-500"
-                    />
-                  </div>
-                </FadeUp>
-              ))}
-            </div>
-          </section>
+      <div className="space-y-10">
+        {posts.map((post) => (
+          <FadeUp key={post.slug}>
+            <Link
+              href={`/blog/${post.slug}`}
+              className="grid md:grid-cols-2 gap-6 items-center border border-cherry/10 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow group"
+            >
+              <div className="relative aspect-[4/3] bg-gray-300">
+                <Image
+                  src={post.cover}
+                  alt={lang === "en" ? post.titleEn : post.titleDe}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div className="p-6">
+                {/* H2 — post title on the index list */}
+                <h2 className="!text-xl md:!text-2xl mb-3">
+                  {lang === "en" ? post.titleEn : post.titleDe}
+                </h2>
+                <p className="font-body text-charcoal/70 leading-relaxed mb-4">
+                  {lang === "en" ? post.excerptEn : post.excerptDe}
+                </p>
+                <span className="font-body text-sm uppercase tracking-wide text-cherry">
+                  {tr("blogCta")}
+                </span>
+              </div>
+            </Link>
+          </FadeUp>
         ))}
       </div>
     </div>
