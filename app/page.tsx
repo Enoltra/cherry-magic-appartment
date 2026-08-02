@@ -43,7 +43,7 @@ export default function HomePage() {
       <section className="relative min-h-[100svh] w-full overflow-hidden flex items-center justify-center text-center pt-24 pb-36 md:pb-24">
         <YouTubeHero videoId={HERO_VIDEO_ID} />
         <FadeUp className="relative z-10 px-6 max-w-4xl mt-6 md:mt-10">
-          <p className="font-script text-5xl md:text-6xl mb-2 leading-none" style={{ color: "var(--gold)" }}>Cherry Magic</p>
+          <p className="font-script text-5xl md:text-6xl mb-6 leading-none" style={{ color: "var(--gold)" }}>Cherry Magic</p>
           <h1 className="mb-5 max-w-4xl mx-auto" style={{ color: "var(--gold)" }}>{tr("heroTitle")}</h1>
           <p className="font-body text-white text-base md:text-xl mb-8 max-w-2xl mx-auto">{tr("heroSubtitle")}</p>
           <a
@@ -59,9 +59,9 @@ export default function HomePage() {
 
       <section className="max-w-6xl mx-auto px-5 -mt-20 md:-mt-14 relative z-20">
         <FadeUp>
-          <div className="hero-badge-card rounded-2xl grid grid-cols-2 md:grid-cols-4 xl:grid-cols-7 gap-6 px-6 py-8 border border-cherry/10">
+          <div className="hero-badge-card rounded-2xl grid grid-cols-2 md:grid-cols-4 xl:grid-cols-7 gap-6 px-6 py-8 border border-cherry/10 items-center">
             {facts.map((f, i) => (
-              <div key={i} className="flex flex-col items-center text-center gap-2 min-h-[76px] justify-start">
+              <div key={i} className="flex flex-col items-center justify-center text-center gap-2 h-full">
                 <div style={{ color: "var(--gold)" }}>{f.icon}</div>
                 <h6 className="!text-[#f7f4ec]">{f.label}</h6>
               </div>
@@ -152,7 +152,7 @@ export default function HomePage() {
         </FadeUp>
 
         <FadeUp delay={200}>
-          <div className="bg-[#eef2ea] rounded-xl p-5 border border-[#353f2a]/15 max-w-sm ml-auto">
+          <div className="bg-[#eef2ea] rounded-xl p-5 border border-[#353f2a]/15 max-w-sm mx-auto md:ml-auto md:mr-0">
             <p className="font-body text-sm leading-relaxed text-[#353f2a]">{tr("neighbourhoodMedical")}</p>
           </div>
         </FadeUp>

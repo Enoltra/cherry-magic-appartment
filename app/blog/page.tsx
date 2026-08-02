@@ -17,7 +17,7 @@ export default function BlogPage() {
         <div className="rounded-2xl overflow-hidden border border-cherry/10 bg-white/60">
           <div className="relative aspect-[16/9]">
             <Image
-              src="/images/blog/10-things-visit-sarajevo.jpg"
+              src="/images/blog/10_things_visit_sarajevo.jpg"
               alt={lang === "en" ? "10 Things to Do in Sarajevo" : "10 Dinge, die man in Sarajevo tun kann"}
               fill
               className="object-cover"
