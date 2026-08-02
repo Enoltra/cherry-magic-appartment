@@ -1,12 +1,13 @@
 "use client";
 
+import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { reviews } from "@/lib/reviews";
 import { useLang } from "@/lib/i18n";
 import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 
 export default function ReviewsSlider() {
-  const { lang } = useLang();
+  const { lang, tr } = useLang();
   const [index, setIndex] = useState(0);
   const timer = useRef<ReturnType<typeof setInterval> | null>(null);
 
@@ -31,9 +32,7 @@ export default function ReviewsSlider() {
         <span className="bg-cherry text-cream text-sm font-body font-bold px-2.5 py-1 rounded-md">
           10
         </span>
-        <span className="font-body text-sm text-charcoal/70">
-          {lang === "en" ? "Exceptional · 7 reviews on Booking.com" : "Außergewöhnlich · 7 Bewertungen auf Booking.com"}
-        </span>
+        <span className="font-body text-sm text-charcoal/70">{tr("reviewsSubtitle")}</span>
       </div>
 
       <div className="mb-5 flex justify-center gap-1 text-gold">
@@ -42,12 +41,25 @@ export default function ReviewsSlider() {
         ))}
       </div>
 
-      <p className="font-heading text-xl md:text-2xl italic text-charcoal leading-relaxed min-h-[140px]">
-        &ldquo;{lang === "en" ? current.textEn : current.textDe}&rdquo;
-      </p>
-      <p className="mt-5 font-body text-sm uppercase tracking-wide text-cherry">
-        {current.name} · {current.country} · {current.source} · {current.rating}
-      </p>
+      <div className="min-h-[180px] flex items-center justify-center">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.45, ease: "easeOut" }}
+            className="w-full"
+          >
+            <p className="font-heading text-xl md:text-2xl italic text-charcoal leading-relaxed">
+              &ldquo;{lang === "en" ? current.textEn : current.textDe}&rdquo;
+            </p>
+            <p className="mt-5 font-body text-sm uppercase tracking-wide text-cherry">
+              {current.name} · {current.country} · {current.source} · {current.rating}
+            </p>
+          </motion.div>
+        </AnimatePresence>
+      </div>
 
       <div className="flex justify-center items-center gap-6 mt-8">
         <button onClick={() => go(-1)} aria-label="Previous review" className="p-2 rounded-full border border-cherry/30 hover:bg-cherry hover:text-cream transition-colors">
