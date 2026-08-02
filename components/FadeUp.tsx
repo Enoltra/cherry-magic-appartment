@@ -1,37 +1,24 @@
 "use client";
 
-import { useEffect, useRef, ReactNode } from "react";
+import { motion } from "framer-motion";
+import { ReactNode } from "react";
 
-export default function FadeUp({
-  children,
-  className = "",
-  delay = 0
-}: {
+interface FadeUpProps {
   children: ReactNode;
   className?: string;
   delay?: number;
-}) {
-  const ref = useRef<HTMLDivElement>(null);
+}
 
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setTimeout(() => el.classList.add("in-view"), delay);
-          observer.unobserve(el);
-        }
-      },
-      { threshold: 0.15 }
-    );
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, [delay]);
-
+export default function FadeUp({ children, className = "", delay = 0 }: FadeUpProps) {
   return (
-    <div ref={ref} className={`fade-up ${className}`}>
+    <motion.div
+      className={className}
+      initial={{ opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-60px" }}
+      transition={{ duration: 0.6, delay: delay / 1000, ease: "easeOut" }}
+    >
       {children}
-    </div>
+    </motion.div>
   );
 }

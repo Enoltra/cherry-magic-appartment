@@ -26,7 +26,6 @@ export default function Footer() {
           <p className="uppercase tracking-wide text-gold mb-3">{tr("footerBook")}</p>
           <a className="block hover:text-cherry-light" href="https://www.booking.com/hotel/ba/cherry-magic-apartment-sarajevo.en-gb.html" target="_blank" rel="noopener noreferrer">Booking.com</a>
           <a className="block hover:text-cherry-light" href="https://www.airbnb.ba/rooms/1612599923460894663" target="_blank" rel="noopener noreferrer">Airbnb</a>
-          <a className="block hover:text-cherry-light" href="https://www.agoda.com/en-ie/cherry-magic-apartment-sarajevo/hotel/sarajevo-ba.html" target="_blank" rel="noopener noreferrer">Agoda</a>
           <Link className="block hover:text-cherry-light" href="/gallery">{tr("navGallery")}</Link>
           <Link className="block hover:text-cherry-light" href="/blog">{tr("navBlog")}</Link>
         </div>
