@@ -43,7 +43,7 @@ export default function HomePage() {
       <section className="relative min-h-[100svh] w-full overflow-hidden flex items-center justify-center text-center pt-24 pb-36 md:pb-24">
         <YouTubeHero videoId={HERO_VIDEO_ID} />
         <FadeUp className="relative z-10 px-6 max-w-4xl mt-6 md:mt-10">
-          <p className="font-script text-5xl md:text-6xl mb-6 leading-none" style={{ color: "var(--gold)" }}>Cherry Magic</p>
+          <p className="font-script text-5xl md:text-6xl leading-none" style={{ color: "var(--gold)", marginBottom: "1.75rem" }}>Cherry Magic</p>
           <h1 className="mb-5 max-w-4xl mx-auto" style={{ color: "var(--gold)" }}>{tr("heroTitle")}</h1>
           <p className="font-body text-white text-base md:text-xl mb-8 max-w-2xl mx-auto">{tr("heroSubtitle")}</p>
           <a
