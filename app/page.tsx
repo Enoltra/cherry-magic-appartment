@@ -89,12 +89,16 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="green-placeholder-bar py-20 border-y border-black/5">
-        <div className="max-w-5xl mx-auto px-5 text-center relative z-10">
+      <section className="green-placeholder-bar py-16 md:py-20 border-y border-black/5">
+        <div className="max-w-5xl mx-auto px-5 grid md:grid-cols-2 gap-10 items-center relative z-10">
           <FadeUp>
-            <div className="mx-auto mb-6 h-20 max-w-3xl rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm"></div>
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-white/10 border border-white/15">
+              <Image src="/images/living-room/cherry-magic-living-room-06.jpeg" alt="Cherry Magic Apartment interior, ideal for extended stays" fill className="object-cover" />
+            </div>
+          </FadeUp>
+          <FadeUp delay={100}>
             <h2 className="!text-2xl md:!text-3xl mb-5 !text-[#f7f4ec]">{tr("extendedStayTitle")}</h2>
-            <p className="font-body text-[#f7f4ec]/88 leading-relaxed max-w-2xl mx-auto">{tr("extendedStayText")}</p>
+            <p className="font-body text-[#f7f4ec]/88 leading-relaxed">{tr("extendedStayText")}</p>
           </FadeUp>
         </div>
       </section>
@@ -107,15 +111,15 @@ export default function HomePage() {
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           {rooms.map((room, i) => (
             <FadeUp key={room.slug} delay={i * 80}>
-              <button
-                onClick={() => setLightbox({ images: room.images, index: 0, title: lang === "en" ? room.titleEn : room.titleDe })}
+              <Link
+                href={`/gallery#${room.slug}`}
                 className="relative block aspect-square rounded-xl overflow-hidden bg-gray-300 group w-full text-left"
               >
                 <Image src={room.images[0]} alt={lang === "en" ? room.titleEn : room.titleDe} fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-charcoal/30 flex items-end p-3">
                   <h4 className="!text-cream !text-sm !font-body !font-medium">{lang === "en" ? room.titleEn : room.titleDe}</h4>
                 </div>
-              </button>
+              </Link>
             </FadeUp>
           ))}
         </div>
@@ -126,7 +130,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="max-w-6xl mx-auto px-5 py-20 grid md:grid-cols-2 gap-14 items-start">
+      <section className="max-w-6xl mx-auto px-5 py-20 grid md:grid-cols-2 gap-x-14 gap-y-10 items-start">
         <FadeUp>
           <h2 className="!text-2xl mb-2">{tr("hostTitle")}</h2>
           <h3 className="!text-lg !text-cherry mb-1">{tr("hostGreeting")}</h3>
@@ -137,12 +141,18 @@ export default function HomePage() {
         </FadeUp>
 
         <FadeUp delay={100}>
-          <div className="relative aspect-[4/5] rounded-2xl overflow-hidden bg-gray-300 mb-6 max-w-sm ml-auto">
+          <div className="relative aspect-[4/5] rounded-2xl overflow-hidden bg-gray-300 max-w-sm ml-auto">
             <Image src="/images/host/amna-picture.jpg" alt="Amna Kurbegović, host of Cherry Magic Apartment" fill className="object-cover" />
           </div>
+        </FadeUp>
+
+        <FadeUp delay={150}>
           <h2 className="!text-2xl mb-4">{tr("neighbourhoodTitle")}</h2>
-          <p className="font-body text-charcoal/80 leading-relaxed mb-4">{tr("neighbourhoodText")}</p>
-          <div className="bg-[#eef2ea] rounded-xl p-5 border border-[#353f2a]/15">
+          <p className="font-body text-charcoal/80 leading-relaxed">{tr("neighbourhoodText")}</p>
+        </FadeUp>
+
+        <FadeUp delay={200}>
+          <div className="bg-[#eef2ea] rounded-xl p-5 border border-[#353f2a]/15 max-w-sm ml-auto">
             <p className="font-body text-sm leading-relaxed text-[#353f2a]">{tr("neighbourhoodMedical")}</p>
           </div>
         </FadeUp>
