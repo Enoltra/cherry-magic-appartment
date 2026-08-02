@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Dancing+Script:wght@400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Rouge+Script&family=Yesteryear&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -12,7 +12,7 @@
   --gold: #c79a56;
   --sage: #353f2a;
   --sage-soft: #e7ede1;
-  --hero-overlay: rgba(0, 0, 0, 0.4);
+  --hero-overlay: rgba(0, 0, 0, 0.45);
 }
 
 html { scroll-behavior: smooth; }
@@ -22,16 +22,16 @@ body {
   font-family: "Karla", sans-serif;
 }
 
-h1, h2, h3 { font-family: "Cormorant Garamond", serif; letter-spacing: -0.02em; }
-h1 { font-size: clamp(3rem, 5vw, 5.4rem); line-height: 0.92; font-weight: 700; }
-h2 { font-size: clamp(2.2rem, 4vw, 3.7rem); line-height: 1; font-weight: 700; }
-h3 { font-size: clamp(1.35rem, 2vw, 1.8rem); line-height: 1.15; font-weight: 600; }
+h1, h2, h3 { font-family: "Yesteryear", cursive; letter-spacing: 0; font-weight: 400; }
+h1 { font-size: clamp(3rem, 5.4vw, 5.6rem); line-height: 1.05; }
+h2 { font-size: clamp(2.1rem, 4vw, 3.4rem); line-height: 1.1; }
+h3 { font-size: clamp(1.5rem, 2.4vw, 2rem); line-height: 1.2; }
 h4 { font-family: "Karla", sans-serif; font-size: 1rem; line-height: 1.2; font-weight: 700; }
 h5 { font-family: "Karla", sans-serif; font-size: 0.9rem; line-height: 1.2; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; }
 h6 { font-family: "Karla", sans-serif; font-size: 0.75rem; line-height: 1.2; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; }
 
-.font-script { font-family: "Dancing Script", cursive; }
-.font-heading { font-family: "Cormorant Garamond", serif; }
+.font-script { font-family: "Rouge Script", cursive; }
+.font-heading { font-family: "Yesteryear", cursive; }
 .font-body { font-family: "Karla", sans-serif; }
 
 .review-card {
@@ -70,10 +70,12 @@ h6 { font-family: "Karla", sans-serif; font-size: 0.75rem; line-height: 1.2; fon
 }
 
 .hero-badge-card {
-  background: rgba(250,243,236,0.95);
-  border: 1px solid rgba(179,39,61,0.08);
-  box-shadow: 0 10px 30px rgba(43,35,32,0.08);
+  background: #353f2a;
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
 }
+.hero-badge-card svg { color: var(--gold); }
+.hero-badge-card h6 { color: #f7f4ec !important; }
 
 .lightbox-backdrop {
   background: rgba(15, 16, 18, 0.94);
@@ -84,4 +86,12 @@ h6 { font-family: "Karla", sans-serif; font-size: 0.75rem; line-height: 1.2; fon
 .logo-mark svg {
   background: transparent !important;
   mix-blend-mode: normal;
+}
+
+.host-photo-fit {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-inline: auto;
+  display: block;
 }

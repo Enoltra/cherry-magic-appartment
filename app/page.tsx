@@ -43,9 +43,9 @@ export default function HomePage() {
       <section className="relative min-h-[100svh] w-full overflow-hidden flex items-center justify-center text-center pt-24 pb-36 md:pb-24">
         <YouTubeHero videoId={HERO_VIDEO_ID} />
         <FadeUp className="relative z-10 px-6 max-w-4xl mt-6 md:mt-10">
-          <p className="font-script text-5xl md:text-6xl text-cream mb-2 leading-none">Cherry Magic</p>
-          <h1 className="text-cream mb-5 max-w-4xl mx-auto">{tr("heroTitle")}</h1>
-          <p className="font-body text-cream/92 text-base md:text-xl mb-8 max-w-2xl mx-auto">{tr("heroSubtitle")}</p>
+          <p className="font-script text-5xl md:text-6xl mb-2 leading-none" style={{ color: "var(--gold)" }}>Cherry Magic</p>
+          <h1 className="mb-5 max-w-4xl mx-auto" style={{ color: "var(--gold)" }}>{tr("heroTitle")}</h1>
+          <p className="font-body text-white text-base md:text-xl mb-8 max-w-2xl mx-auto">{tr("heroSubtitle")}</p>
           <a
             href="https://www.booking.com/hotel/ba/cherry-magic-apartment-sarajevo.en-gb.html"
             target="_blank"
@@ -61,9 +61,9 @@ export default function HomePage() {
         <FadeUp>
           <div className="hero-badge-card rounded-2xl grid grid-cols-2 md:grid-cols-4 xl:grid-cols-7 gap-6 px-6 py-8 border border-cherry/10">
             {facts.map((f, i) => (
-              <div key={i} className="flex flex-col items-center text-center gap-2 text-charcoal min-h-[76px] justify-start">
-                <div className="text-cherry">{f.icon}</div>
-                <h6 className="!text-charcoal">{f.label}</h6>
+              <div key={i} className="flex flex-col items-center text-center gap-2 min-h-[76px] justify-start">
+                <div style={{ color: "var(--gold)" }}>{f.icon}</div>
+                <h6 className="!text-[#f7f4ec]">{f.label}</h6>
               </div>
             ))}
           </div>
@@ -141,8 +141,8 @@ export default function HomePage() {
         </FadeUp>
 
         <FadeUp delay={100}>
-          <div className="relative aspect-[4/5] rounded-2xl overflow-hidden bg-gray-300 max-w-sm ml-auto">
-            <Image src="/images/host/amna-picture.jpg" alt="Amna Kurbegović, host of Cherry Magic Apartment" fill className="object-cover" />
+          <div className="rounded-2xl overflow-hidden bg-gray-100 max-w-sm mx-auto md:ml-auto md:mr-0">
+            <Image src="/images/host/amna-picture.jpg" alt="Amna Kurbegović, host of Cherry Magic Apartment" width={600} height={750} className="host-photo-fit" />
           </div>
         </FadeUp>
 

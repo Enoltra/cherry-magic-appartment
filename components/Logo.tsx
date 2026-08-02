@@ -4,7 +4,7 @@ export default function Logo({ className = "" }: { className?: string }) {
   return (
     <span className={`logo-mark inline-flex items-center gap-2 bg-transparent ${className}`}>
       <Image
-        src="/images/logo/cherry-magic-logo.svg"
+        src="/images/logo/cherry-magic-logo.png"
         alt=""
         width={40}
         height={40}

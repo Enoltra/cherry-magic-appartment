@@ -34,6 +34,7 @@ export const rooms: Room[] = [
     descDe:
       "Eine komplette Küche mit Essbereich und allem, was Sie zum Kochen und Essen benötigen. Perfekt für Selbstversorger, Familien und alle, die einen längeren Aufenthalt in Sarajevo planen.",
     images: [
+      "/images/kitchen/cherry-magic-ktchen00006.jpeg",
       "/images/kitchen/cherry-magic-dining-room00001.jpeg",
       "/images/kitchen/cherry-magic-dining-room00002.jpeg",
       "/images/kitchen/cherry-magic-dining-room00003.jpeg",
@@ -42,7 +43,6 @@ export const rooms: Room[] = [
       "/images/kitchen/cherry-magic-ktchen00003.jpeg",
       "/images/kitchen/cherry-magic-ktchen00004.jpeg",
       "/images/kitchen/cherry-magic-ktchen00005.jpeg",
-      "/images/kitchen/cherry-magic-ktchen00006.jpeg",
       "/images/kitchen/cherry-magic-ktchen00007.jpeg",
       "/images/kitchen/cherry-magic-ktchen00008.jpeg",
       "/images/kitchen/cherry-magic-ktchen00009.jpeg"
@@ -73,9 +73,9 @@ export const rooms: Room[] = [
     descDe:
       "Ein ruhiges zweites Schlafzimmer mit weicher Bettwäsche. Ideal für Kinder, ein weiteres Paar oder alle, die während des Aufenthalts ihren eigenen ruhigen Rückzugsort möchten.",
     images: [
+      "/images/bedroom-2/cherry-magic-bedroom-200003.jpeg",
       "/images/bedroom-2/cherry-magic-bedroom-200001.jpeg",
-      "/images/bedroom-2/cherry-magic-bedroom-200002.jpeg",
-      "/images/bedroom-2/cherry-magic-bedroom-200003.jpeg"
+      "/images/bedroom-2/cherry-magic-bedroom-200002.jpeg"
     ]
   },
   {
@@ -106,8 +106,8 @@ export const rooms: Room[] = [
     descDe:
       "Eine ruhige Wohnstraße im grünen Viertel Višnjik mit bequemem, kostenlosem Parkplatz. Nah genug am Stadtzentrum für Sightseeing, ruhig genug für echte Erholung.",
     images: [
-      "/images/garden/cherry-magic-exterior00001.jpeg",
       "/images/garden/cherry-magic-exterior00002.jpeg",
+      "/images/garden/cherry-magic-exterior00001.jpeg",
       "/images/garden/cherry-magic-exterior00003.jpeg",
       "/images/garden/cherry-magic-exterior00004.jpeg",
       "/images/garden/cherry-magic-exterior00005.jpeg",
