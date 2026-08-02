@@ -2,11 +2,11 @@
 
 import { createContext, useContext, useState, ReactNode } from "react";
 
-export type Lang = "en" | "de";
+type Lang = "en" | "de";
 
 type Dict = Record<string, { en: string; de: string }>;
 
-export const t: Dict = {
+const dict: Dict = {
   navHome: { en: "Home", de: "Startseite" },
   navGallery: { en: "Gallery", de: "Galerie" },
   navBlog: { en: "Blog", de: "Blog" },
@@ -22,25 +22,24 @@ export const t: Dict = {
   },
   heroCta: { en: "Check Availability", de: "Verfügbarkeit prüfen" },
 
-  quickFactsTitle: { en: "At a Glance", de: "Auf einen Blick" },
   factGuests: { en: "Sleeps up to 6", de: "Bis zu 6 Gäste" },
-  factBedrooms: { en: "2 Bedrooms + Sofa Bed", de: "2 Schlafzimmer + Schlafsofa" },
-  factKitchen: { en: "Full Kitchen", de: "Voll ausgestattete Küche" },
-  factParking: { en: "Free Parking", de: "Kostenlose Parkplätze" },
+  factBedrooms: { en: "2 Bedrooms +", de: "2 Schlafzimmer +" },
+  factKitchen: { en: "Full Kitchen", de: "Volle Küche" },
+  factParking: { en: "Free Parking", de: "Kostenloser Parkplatz" },
   factWifi: { en: "Fast Wi-Fi", de: "Schnelles WLAN" },
   factAc: { en: "Air Conditioning", de: "Klimaanlage" },
   factLocation: { en: "Quiet Višnjik Neighbourhood", de: "Ruhiges Viertel Višnjik" },
 
-  highlightsTitle: { en: "Why Guests Love Cherry Magic", de: "Warum Gäste Cherry Magic lieben" },
-  highlight1Title: { en: "Perfect Location", de: "Perfekte Lage" },
+  highlightsTitle: { en: "Why Guests Love It Here", de: "Warum Gäste es hier lieben" },
+  highlight1Title: { en: "Recently Renovated", de: "Kürzlich renoviert" },
   highlight1Text: {
-    en: "A quiet, residential street in Višnjik. Only 15 minutes on foot to Baščaršija (Old Town) and close to Sarajevo's main medical area and private clinics.",
-    de: "Eine ruhige Wohnstraße in Višnjik. Nur 15 Gehminuten von Baščaršija (Altstadt) entfernt und nah an Sarajevos wichtigem medizinischem Bereich sowie privaten Kliniken."
-  },
-  highlight2Title: { en: "Modern Comfort", de: "Moderner Komfort" },
-  highlight2Text: {
     en: "Recently renovated with a fully-equipped kitchen, air conditioning, fast Wi-Fi, and a smart lock for easy self check-in at any hour.",
     de: "Kürzlich renoviert, mit voll ausgestatteter Küche, Klimaanlage, schnellem WLAN und einem Smart-Lock für einfachen Self-Check-in zu jeder Uhrzeit."
+  },
+  highlight2Title: { en: "A Quiet, Green Location", de: "Eine ruhige, grüne Lage" },
+  highlight2Text: {
+    en: "A quiet, residential street in Višnjik. Only 15 minutes on foot to Baščaršija (Old Town) and close to Sarajevo's main medical area and private clinics.",
+    de: "Eine ruhige Wohnstraße in Višnjik. Nur 15 Gehminuten von Baščaršija (Altstadt) entfernt und nah an Sarajevos wichtigem medizinischem Bereich sowie privaten Kliniken."
   },
   highlight3Title: { en: "Space for All", de: "Platz für alle" },
   highlight3Text: {
@@ -53,17 +52,25 @@ export const t: Dict = {
     de: "Ein Willkommenspaket mit lokalen Köstlichkeiten, hotelähnlichen Pflegeprodukten, einem Safe sowie einem Babybett & Hochstuhl auf Anfrage."
   },
 
-  extendedStayTitle: { en: "Perfect for Extended Stays", de: "Ideal für längere Aufenthalte" },
+  extendedStayTitle: { en: "Perfect for Extended Stays", de: "Perfekt für längere Aufenthalte" },
   extendedStayText: {
     en: "Whether you are a remote worker, a family exploring the Balkans, or visiting Sarajevo for treatment, consultations, or recovery, our fully-equipped kitchen and quiet neighbourhood offer the perfect home base for a longer stay.",
     de: "Ob Sie remote arbeiten, mit der Familie den Balkan erkunden oder wegen Behandlungen, Beratungen oder Erholung nach Sarajevo kommen, unsere voll ausgestattete Küche und die ruhige Umgebung bieten die perfekte Basis für einen längeren Aufenthalt."
   },
 
+  galleryTitle: { en: "A Look Inside", de: "Ein Blick ins Innere" },
+  exteriorLabel: { en: "Exterior", de: "Außenbereich" },
+  galleryIntro: {
+    en: "Explore Cherry Magic room by room. From the bright living area to the quiet bedrooms.",
+    de: "Entdecken Sie Cherry Magic Raum für Raum. Vom hellen Wohnbereich bis zu den ruhigen Schlafzimmern."
+  },
+  galleryCta: { en: "View Full Gallery", de: "Ganze Galerie ansehen" },
+
   hostTitle: { en: "Meet Your Host", de: "Lernen Sie Ihre Gastgeberin kennen" },
   hostName: { en: "Amna Kurbegović", de: "Amna Kurbegović" },
   hostGreeting: {
-    en: "Hi, I'm Amna — I'll be your host!",
-    de: "Hallo, ich bin Amna — Ihre Gastgeberin!"
+    en: "Hi, I'm Amna. I'll be your host!",
+    de: "Hallo, ich bin Amna. Ihre Gastgeberin!"
   },
   hostIntroText: {
     en: "I take great care of every little detail so your stay feels effortless. From a spotless apartment when you arrive to a welcome pack waiting on the table, and a quick reply whenever you need something during your stay.",
@@ -85,50 +92,35 @@ export const t: Dict = {
     de: "Diese Lage ist besonders praktisch für Gäste, die wegen Terminen, Behandlungen, Beratungen oder zur Erholung nach Sarajevo kommen, da mehrere Kliniken und medizinische Angebote leicht erreichbar sind."
   },
 
-  reviewsTitle: { en: "What Guests Are Saying", de: "Was Gäste sagen" },
+  reviewsTitle: { en: "What Our Guests Say", de: "Was unsere Gäste sagen" },
   reviewsSubtitle: {
     en: "Here are some of our guest reviews.",
     de: "Hier sind einige unserer Gästebewertungen."
   },
 
-  galleryTitle: { en: "A Look Inside", de: "Ein Blick ins Innere" },
-  exteriorLabel: { en: "Exterior", de: "Außenbereich" },
-  galleryIntro: {
-    en: "Explore Cherry Magic room by room. From the bright living area to the quiet bedrooms.",
-    de: "Entdecken Sie Cherry Magic Raum für Raum. Vom hellen Wohnbereich bis zu den ruhigen Schlafzimmern."
-  },
-  galleryCta: { en: "See Full Gallery", de: "Zur vollständigen Galerie" },
-
-  blogTitle: { en: "From the Sarajevo Journal", de: "Aus dem Sarajevo Journal" },
-  blogCta: { en: "Read the Guide", de: "Reiseführer lesen" },
-
   footerTagline: {
     en: "Cherry Magic Apartment: your quiet home base in Sarajevo's green Višnjik neighbourhood.",
     de: "Cherry Magic Apartment: Ihre ruhige Basis im grünen Višnjik-Viertel von Sarajevo."
   },
-  footerBook: { en: "Book Directly", de: "Direkt buchen" }
+  footerBook: { en: "Book Your Stay", de: "Buchen Sie Ihren Aufenthalt" }
 };
 
 interface LangContextType {
   lang: Lang;
   setLang: (l: Lang) => void;
-  tr: (key: keyof typeof t) => string;
+  tr: (key: string) => string;
 }
 
 const LangContext = createContext<LangContextType | undefined>(undefined);
 
-export function LanguageProvider({ children }: { children: ReactNode }) {
+export function LangProvider({ children }: { children: ReactNode }) {
   const [lang, setLang] = useState<Lang>("en");
-  const tr = (key: keyof typeof t) => t[key][lang];
-  return (
-    <LangContext.Provider value={{ lang, setLang, tr }}>
-      {children}
-    </LangContext.Provider>
-  );
+  const tr = (key: string) => dict[key]?.[lang] ?? key;
+  return <LangContext.Provider value={{ lang, setLang, tr }}>{children}</LangContext.Provider>;
 }
 
 export function useLang() {
   const ctx = useContext(LangContext);
-  if (!ctx) throw new Error("useLang must be used within LanguageProvider");
+  if (!ctx) throw new Error("useLang must be used within LangProvider");
   return ctx;
 }
