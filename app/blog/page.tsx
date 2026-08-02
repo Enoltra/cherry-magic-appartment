@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useLang } from "@/lib/i18n";
 import FadeUp from "@/components/FadeUp";
 
@@ -14,31 +15,37 @@ export default function BlogPage() {
       </FadeUp>
 
       <FadeUp delay={100}>
-        <div className="rounded-2xl overflow-hidden border border-cherry/10 bg-white/60">
-          <div className="relative aspect-[16/9]">
+        <Link
+          href="/blog/10-things-sarajevo"
+          className="group block rounded-2xl overflow-hidden border border-cherry/10 bg-white/60 transition-shadow hover:shadow-lg"
+        >
+          <div className="relative aspect-[16/9] overflow-hidden">
             <Image
               src="/images/blog/10_things_visit_sarajevo.jpg"
               alt={lang === "en" ? "10 Things to Do in Sarajevo" : "10 Dinge, die man in Sarajevo tun kann"}
               fill
-              className="object-cover"
+              className="object-cover transition-transform duration-500 group-hover:scale-105"
             />
           </div>
           <div className="p-6">
-            <h3 className="!text-lg !text-cherry mb-2">
+            <h3 className="!text-lg !text-cherry mb-2 group-hover:underline">
               {lang === "en" ? "10 Things to Do in Sarajevo" : "10 Dinge, die man in Sarajevo tun kann"}
             </h3>
             <p className="font-body text-charcoal/70 text-sm leading-relaxed">
               {lang === "en"
-                ? "Our top picks for exploring the city during your stay, from Baščaršija's old bazaar to the hills above Sarajevo."
-                : "Unsere besten Tipps, um die Stadt während Ihres Aufenthalts zu entdecken, vom alten Bazar in Baščaršija bis zu den Hügeln über Sarajevo."}
+                ? "Our top picks for exploring the city during your stay, from Bascarsija's old bazaar to the hills above Sarajevo."
+                : "Unsere besten Tipps, um die Stadt wahrend Ihres Aufenthalts zu entdecken, vom alten Bazar in Bascarsija bis zu den Hugeln uber Sarajevo."}
             </p>
+            <span className="inline-block mt-4 font-body text-sm uppercase tracking-wide text-cherry group-hover:text-cherry-dark">
+              {lang === "en" ? "Read more ->" : "Weiterlesen ->"}
+            </span>
           </div>
-        </div>
+        </Link>
       </FadeUp>
 
       <FadeUp delay={150}>
         <p className="font-body text-charcoal/60 text-sm text-center mt-12">
-          {lang === "en" ? "More travel guides coming soon." : "Weitere Reiseführer folgen in Kürze."}
+          {lang === "en" ? "More travel guides coming soon." : "Weitere Reisefuhrer folgen in Kurze."}
         </p>
       </FadeUp>
     </div>
