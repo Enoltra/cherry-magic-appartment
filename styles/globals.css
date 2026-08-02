@@ -79,3 +79,9 @@ h6 { font-family: "Karla", sans-serif; font-size: 0.75rem; line-height: 1.2; fon
   background: rgba(15, 16, 18, 0.94);
   backdrop-filter: blur(4px);
 }
+
+.logo-mark img,
+.logo-mark svg {
+  background: transparent !important;
+  mix-blend-mode: normal;
+}
