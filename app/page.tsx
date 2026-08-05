@@ -6,7 +6,7 @@ import { useState } from "react";
 import { useLang } from "@/lib/i18n";
 import FadeUp from "@/components/FadeUp";
 import ReviewsSlider from "@/components/ReviewsSlider";
-import YouTubeHero from "@/components/YouTubeHero";
+import HeroVideo from "@/components/HeroVideo";
 import Lightbox from "@/components/Lightbox";
 import { rooms } from "@/lib/rooms";
 import { Home as HomeIcon, BedDouble, ChefHat, Car, Wifi, Snowflake, TreePalm } from "lucide-react";
@@ -41,7 +41,7 @@ export default function HomePage() {
       )}
 
       <section className="relative min-h-[100svh] w-full overflow-hidden flex items-center justify-center text-center pt-24 pb-36 md:pb-24">
-        <YouTubeHero videoId={HERO_VIDEO_ID} />
+        <HeroVideo />
         <FadeUp className="relative z-10 px-6 max-w-4xl mt-6 md:mt-10">
           <p className="font-script text-5xl md:text-6xl leading-none" style={{ color: "var(--gold)", marginBottom: "1.75rem" }}>Cherry Magic</p>
           <h1 className="mb-5 max-w-4xl mx-auto" style={{ color: "var(--gold)" }}>{tr("heroTitle")}</h1>
