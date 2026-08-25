@@ -28,6 +28,7 @@ const dict: Dict = {
   factParking: { en: "Free Parking", de: "Kostenloser Parkplatz" },
   factWifi: { en: "Fast Wi-Fi", de: "Schnelles WLAN" },
   factAc: { en: "Air Conditioning", de: "Klimaanlage" },
+  factHeating: { en: "Heating", de: "Heizung" },
   factLocation: { en: "Quiet Višnjik Neighbourhood", de: "Ruhiges Viertel Višnjik" },
 
   highlightsTitle: { en: "Why Guests Love It Here", de: "Warum Gäste es hier lieben" },
@@ -48,8 +49,8 @@ const dict: Dict = {
   },
   highlight4Title: { en: "Thoughtful Extras", de: "Durchdachte Extras" },
   highlight4Text: {
-    en: "A welcome pack with local treats, hotel-quality toiletries, a safety deposit box, and a baby crib & high chair available on request.",
-    de: "Ein Willkommenspaket mit lokalen Köstlichkeiten, hotelähnlichen Pflegeprodukten, einem Safe sowie einem Babybett & Hochstuhl auf Anfrage."
+    en: "Baby- and family-friendly on request: a travel cot, high chair, toys, safety locks, and a toddler toilet seat with a step stool. Plus a welcome pack with local treats, hotel-quality toiletries, and a safety deposit box.",
+    de: "Baby- und familienfreundlich auf Anfrage: Reisebett, Hochstuhl, Spielzeug, Sicherheitsschlösser sowie ein Kindertoilettensitz mit Trittstufe. Dazu ein Willkommenspaket mit lokalen Köstlichkeiten, hotelähnlichen Pflegeprodukten und ein Safe."
   },
 
   extendedStayTitle: { en: "Perfect for Extended Stays", de: "Perfekt für längere Aufenthalte" },
@@ -88,8 +89,8 @@ const dict: Dict = {
     de: "Višnjik bietet die perfekte Balance. Es ist ruhig, grün und wohnlich, und dennoch nur einen kurzen Spaziergang vom pulsierenden historischen Herzen Sarajevos entfernt. Charmante niedrige Gebäude, baumbestandene Straßen und ein starkes Gemeinschaftsgefühl treffen auf Bäckereien, Supermärkte und authentische lokale Lokale direkt um die Ecke."
   },
   neighbourhoodMedical: {
-    en: "This location is especially practical for guests visiting Sarajevo for appointments, treatment, consultations, or recovery, with several clinics and medical services within easy reach.",
-    de: "Diese Lage ist besonders praktisch für Gäste, die wegen Terminen, Behandlungen, Beratungen oder zur Erholung nach Sarajevo kommen, da mehrere Kliniken und medizinische Angebote leicht erreichbar sind."
+    en: "This location is especially practical for guests visiting Sarajevo for appointments, treatment, consultations, or recovery, with several clinics and medical services within easy reach. It is also ideal for families wanting to explore Sarajevo while staying in one of the city's most beautiful, quiet and green neighbourhoods, within walking distance of the city centre.",
+    de: "Diese Lage ist besonders praktisch für Gäste, die wegen Terminen, Behandlungen, Beratungen oder zur Erholung nach Sarajevo kommen, da mehrere Kliniken und medizinische Angebote leicht erreichbar sind. Sie ist zudem ideal für Familien, die Sarajevo erkunden möchten und dabei in einem der schönsten, ruhigsten und grünsten Viertel der Stadt wohnen, in Gehdistanz zum Stadtzentrum."
   },
 
   reviewsTitle: { en: "What Our Guests Say", de: "Was unsere Gäste sagen" },
@@ -102,7 +103,55 @@ const dict: Dict = {
     en: "Cherry Magic Apartment: your quiet home base in Sarajevo's green Višnjik neighbourhood.",
     de: "Cherry Magic Apartment: Ihre ruhige Basis im grünen Višnjik-Viertel von Sarajevo."
   },
-  footerBook: { en: "Book Your Stay", de: "Buchen Sie Ihren Aufenthalt" }
+  footerBook: { en: "Book Your Stay", de: "Buchen Sie Ihren Aufenthalt" },
+  footerNearby: { en: "Close to Baščaršija & the city centre", de: "Nahe Baščaršija & der Innenstadt" },
+  navHouseRules: { en: "House Rules", de: "Hausordnung" },
+
+  houseRulesTitle: { en: "House Rules", de: "Hausordnung" },
+  houseRulesIntro: {
+    en: "A few simple guidelines to help everyone feel at home during their stay.",
+    de: "Ein paar einfache Hinweise, damit sich jeder während seines Aufenthalts wie zuhause fühlt."
+  },
+  houseRule1: {
+    en: "Please take your shoes off at the door — we've left slippers for you if your feet get cold.",
+    de: "Bitte ziehen Sie an der Tür Ihre Schuhe aus — wir haben Hausschuhe für Sie bereitgestellt, falls Ihnen kalt wird."
+  },
+  houseRule2: {
+    en: "Treat the apartment like your own home: please keep it clean and tidy throughout your stay.",
+    de: "Behandeln Sie das Apartment wie Ihr eigenes Zuhause: Bitte halten Sie es während Ihres Aufenthalts sauber und ordentlich."
+  },
+  houseRule3: {
+    en: "Please handle furniture, appliances and decor with care, and let us know right away if anything gets damaged or broken.",
+    de: "Bitte gehen Sie sorgsam mit Möbeln, Geräten und Dekoration um und informieren Sie uns sofort, falls etwas beschädigt wird oder kaputtgeht."
+  },
+  houseRule4: {
+    en: "No smoking inside the apartment.",
+    de: "Rauchen im Apartment ist nicht erlaubt."
+  },
+  houseRule5: {
+    en: "No parties or events.",
+    de: "Keine Partys oder Veranstaltungen."
+  },
+  houseRule6: {
+    en: "Quiet hours are from 22:00 to 08:00 — please be considerate of the neighbours.",
+    de: "Ruhezeiten gelten von 22:00 bis 08:00 Uhr — bitte nehmen Sie Rücksicht auf die Nachbarn."
+  },
+  houseRule7: {
+    en: "Only registered guests may stay overnight; please let us know in advance about any visitors.",
+    de: "Nur angemeldete Gäste dürfen übernachten; bitte informieren Sie uns im Voraus über etwaige Besucher."
+  },
+  houseRule8: {
+    en: "No pets, unless agreed with the host in advance.",
+    de: "Haustiere sind nicht erlaubt, außer nach vorheriger Absprache mit der Gastgeberin."
+  },
+  houseRule9: {
+    en: "Check-in is from 14:00 and check-out by 11:00, unless otherwise arranged with the host.",
+    de: "Check-in ist ab 14:00 Uhr und Check-out bis 11:00 Uhr, sofern nicht anders mit der Gastgeberin vereinbart."
+  },
+  houseRule10: {
+    en: "Before you leave, please lock the door and switch off the lights, AC and any appliances.",
+    de: "Bitte schließen Sie beim Verlassen die Tür ab und schalten Sie Licht, Klimaanlage und Geräte aus."
+  }
 };
 
 interface LangContextType {

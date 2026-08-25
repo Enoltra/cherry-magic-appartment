@@ -18,8 +18,8 @@ export default function Footer() {
         <div className="font-body text-sm space-y-2">
           <p className="uppercase tracking-wide text-gold mb-3">Sarajevo, Bosnia &amp; Herzegovina</p>
           <p>Free parking · Free Wi-Fi</p>
-          <p>Quiet residential neighbourhood</p>
-          <p>Close to KCUS &amp; ASA Hospital</p>
+          <p>Quiet, green residential neighbourhood</p>
+          <p>{tr("footerNearby")}</p>
         </div>
 
         <div className="font-body text-sm space-y-3">
@@ -28,6 +28,7 @@ export default function Footer() {
           <a className="block hover:text-cherry-light" href="https://www.airbnb.ba/rooms/1612599923460894663" target="_blank" rel="noopener noreferrer">Airbnb</a>
           <Link className="block hover:text-cherry-light" href="/gallery">{tr("navGallery")}</Link>
           <Link className="block hover:text-cherry-light" href="/blog">{tr("navBlog")}</Link>
+          <Link className="block hover:text-cherry-light" href="/house-rules">{tr("navHouseRules")}</Link>
         </div>
       </div>
       <div className="text-center text-xs text-cream/40 pb-6 font-body">

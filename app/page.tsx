@@ -9,7 +9,7 @@ import ReviewsSlider from "@/components/ReviewsSlider";
 import HeroVideo from "@/components/HeroVideo";
 import Lightbox from "@/components/Lightbox";
 import { rooms } from "@/lib/rooms";
-import { Home as HomeIcon, BedDouble, ChefHat, Car, Wifi, Snowflake, TreePalm } from "lucide-react";
+import { Home as HomeIcon, BedDouble, ChefHat, Car, Wifi, Snowflake, Flame, TreePalm } from "lucide-react";
 
 const HERO_VIDEO_ID = "o7DSZ4_0w1Q";
 
@@ -24,6 +24,7 @@ export default function HomePage() {
     { icon: <Car size={22} />, label: tr("factParking") },
     { icon: <Wifi size={22} />, label: tr("factWifi") },
     { icon: <Snowflake size={22} />, label: tr("factAc") },
+    { icon: <Flame size={22} />, label: tr("factHeating") },
     { icon: <TreePalm size={22} />, label: tr("factLocation") }
   ];
 
@@ -59,7 +60,7 @@ export default function HomePage() {
 
       <section className="max-w-6xl mx-auto px-5 -mt-20 md:-mt-14 relative z-20">
         <FadeUp>
-          <div className="hero-badge-card rounded-2xl grid grid-cols-2 md:grid-cols-4 xl:grid-cols-7 gap-6 px-6 py-8 border border-cherry/10 items-center">
+          <div className="hero-badge-card rounded-2xl grid grid-cols-2 md:grid-cols-4 xl:grid-cols-8 gap-6 px-6 py-8 border border-cherry/10 items-center">
             {facts.map((f, i) => (
               <div key={i} className="flex flex-col items-center justify-center text-center gap-2 h-full">
                 <div style={{ color: "var(--gold)" }}>{f.icon}</div>
