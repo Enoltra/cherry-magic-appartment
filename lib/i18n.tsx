@@ -17,8 +17,8 @@ const dict: Dict = {
     de: "Eine helle, moderne Oase im grünen Herzen von Sarajevo"
   },
   heroSubtitle: {
-    en: "A fully renovated 50m² apartment in Višnjik. Quiet, leafy and residential, yet a short walk from Baščaršija and the Clinical Centre.",
-    de: "Ein komplett renoviertes 50 m² Apartment in Višnjik. Ruhig, grün und wohnlich, und dennoch nur einen kurzen Spaziergang von Baščaršija und dem Klinikzentrum entfernt."
+    en: "A fully renovated 50m² apartment in Višnjik for up to six guests. Quiet, leafy and family-friendly, a short walk from Baščaršija and the city centre.",
+    de: "Ein komplett renoviertes 50 m² Apartment in Višnjik für bis zu sechs Gäste. Ruhig, grün und familienfreundlich, nur einen kurzen Spaziergang von Baščaršija und der Innenstadt entfernt."
   },
   heroCta: { en: "Check Availability", de: "Verfügbarkeit prüfen" },
 
@@ -39,13 +39,13 @@ const dict: Dict = {
   },
   highlight2Title: { en: "A Quiet, Green Location", de: "Eine ruhige, grüne Lage" },
   highlight2Text: {
-    en: "A quiet, residential street in Višnjik. Only 15 minutes on foot to Baščaršija (Old Town) and close to Sarajevo's main medical area and private clinics.",
-    de: "Eine ruhige Wohnstraße in Višnjik. Nur 15 Gehminuten von Baščaršija (Altstadt) entfernt und nah an Sarajevos wichtigem medizinischem Bereich sowie privaten Kliniken."
+    en: "A quiet, residential street in Višnjik. Only 15 minutes on foot to Baščaršija (Old Town), with bakeries and supermarkets nearby, and Sarajevo's main medical area within easy reach.",
+    de: "Eine ruhige Wohnstraße in Višnjik. Nur 15 Gehminuten von Baščaršija (Altstadt) entfernt, mit Bäckereien und Supermärkten in der Nähe und Sarajevos wichtigem medizinischem Bereich in leicht erreichbarer Nähe."
   },
   highlight3Title: { en: "Space for All", de: "Platz für alle" },
   highlight3Text: {
-    en: "Two cozy bedrooms plus a sofa bed comfortably accommodate up to six guests, including children. Ideal for families, groups and medical visitors.",
-    de: "Zwei gemütliche Schlafzimmer plus ein Schlafsofa bieten bequem Platz für bis zu sechs Gäste, auch für Kinder. Ideal für Familien, Gruppen und medizinische Besucher."
+    en: "Two cozy bedrooms plus a sofa bed comfortably accommodate up to six guests, including children. Ideal for family visits, reunions and small groups.",
+    de: "Zwei gemütliche Schlafzimmer plus ein Schlafsofa bieten bequem Platz für bis zu sechs Gäste, auch für Kinder. Ideal für Familienbesuche, Familientreffen und kleine Gruppen."
   },
   highlight4Title: { en: "Thoughtful Extras", de: "Durchdachte Extras" },
   highlight4Text: {
@@ -55,8 +55,8 @@ const dict: Dict = {
 
   extendedStayTitle: { en: "Perfect for Extended Stays", de: "Perfekt für längere Aufenthalte" },
   extendedStayText: {
-    en: "Whether you are a remote worker, a family exploring the Balkans, or visiting Sarajevo for treatment, consultations, or recovery, our fully-equipped kitchen and quiet neighbourhood offer the perfect home base for a longer stay.",
-    de: "Ob Sie remote arbeiten, mit der Familie den Balkan erkunden oder wegen Behandlungen, Beratungen oder Erholung nach Sarajevo kommen, unsere voll ausgestattete Küche und die ruhige Umgebung bieten die perfekte Basis für einen längeren Aufenthalt."
+    en: "Whether you are visiting family in Sarajevo, exploring the Balkans with your kids, working remotely, or here for an appointment or recovery, our fully-equipped kitchen and quiet neighbourhood make a comfortable home base for a longer stay.",
+    de: "Ob Sie Familie in Sarajevo besuchen, mit Kindern den Balkan erkunden, remote arbeiten oder wegen eines Termins oder zur Erholung hier sind, unsere voll ausgestattete Küche und die ruhige Umgebung bieten eine bequeme Basis für einen längeren Aufenthalt."
   },
 
   galleryTitle: { en: "A Look Inside", de: "Ein Blick ins Innere" },
@@ -89,8 +89,8 @@ const dict: Dict = {
     de: "Višnjik bietet die perfekte Balance. Es ist ruhig, grün und wohnlich, und dennoch nur einen kurzen Spaziergang vom pulsierenden historischen Herzen Sarajevos entfernt. Charmante niedrige Gebäude, baumbestandene Straßen und ein starkes Gemeinschaftsgefühl treffen auf Bäckereien, Supermärkte und authentische lokale Lokale direkt um die Ecke."
   },
   neighbourhoodMedical: {
-    en: "This location is especially practical for guests visiting Sarajevo for appointments, treatment, consultations, or recovery, with several clinics and medical services within easy reach. It is also ideal for families wanting to explore Sarajevo while staying in one of the city's most beautiful, quiet and green neighbourhoods, within walking distance of the city centre.",
-    de: "Diese Lage ist besonders praktisch für Gäste, die wegen Terminen, Behandlungen, Beratungen oder zur Erholung nach Sarajevo kommen, da mehrere Kliniken und medizinische Angebote leicht erreichbar sind. Sie ist zudem ideal für Familien, die Sarajevo erkunden möchten und dabei in einem der schönsten, ruhigsten und grünsten Viertel der Stadt wohnen, in Gehdistanz zum Stadtzentrum."
+    en: "Ideal for families and visiting relatives who want to explore Sarajevo from one of the city's most beautiful, quiet and green neighbourhoods, within walking distance of the city centre. The location is also practical for guests with appointments or recovery, with several clinics and medical services within easy reach.",
+    de: "Ideal für Familien und Besuche bei Verwandten, die Sarajevo aus einem der schönsten, ruhigsten und grünsten Viertel der Stadt erkunden möchten, in Gehdistanz zum Stadtzentrum. Die Lage ist zudem praktisch für Gäste mit Terminen oder zur Erholung, da mehrere Kliniken und medizinische Angebote leicht erreichbar sind."
   },
 
   reviewsTitle: { en: "What Our Guests Say", de: "Was unsere Gäste sagen" },
