@@ -2,7 +2,7 @@
 
 import { useLang } from "@/lib/i18n";
 import FadeUp from "@/components/FadeUp";
-import { Footprints, Sparkles, ShieldCheck, CigaretteOff, PartyPopper, Moon, Users, PawPrint, Clock, DoorClosed } from "lucide-react";
+import { Footprints, Sparkles, CigaretteOff, PartyPopper, Moon, Users, PawPrint, Clock, DoorClosed } from "lucide-react";
 
 export default function HouseRulesPage() {
   const { tr } = useLang();
@@ -10,14 +10,13 @@ export default function HouseRulesPage() {
   const rules = [
     { icon: <Footprints size={22} />, text: tr("houseRule1") },
     { icon: <Sparkles size={22} />, text: tr("houseRule2") },
-    { icon: <ShieldCheck size={22} />, text: tr("houseRule3") },
-    { icon: <CigaretteOff size={22} />, text: tr("houseRule4") },
-    { icon: <PartyPopper size={22} />, text: tr("houseRule5") },
-    { icon: <Moon size={22} />, text: tr("houseRule6") },
-    { icon: <Users size={22} />, text: tr("houseRule7") },
-    { icon: <PawPrint size={22} />, text: tr("houseRule8") },
-    { icon: <Clock size={22} />, text: tr("houseRule9") },
-    { icon: <DoorClosed size={22} />, text: tr("houseRule10") }
+    { icon: <CigaretteOff size={22} />, text: tr("houseRule3") },
+    { icon: <PartyPopper size={22} />, text: tr("houseRule4") },
+    { icon: <Moon size={22} />, text: tr("houseRule5") },
+    { icon: <Users size={22} />, text: tr("houseRule6") },
+    { icon: <PawPrint size={22} />, text: tr("houseRule7") },
+    { icon: <Clock size={22} />, text: tr("houseRule8") },
+    { icon: <DoorClosed size={22} />, text: tr("houseRule9") }
   ];
 
   return (
@@ -30,14 +29,18 @@ export default function HouseRulesPage() {
 
       <div className="grid gap-5 md:grid-cols-2">
         {rules.map((rule, i) => (
-          <FadeUp key={i} delay={i * 60}>
+          <FadeUp key={i} delay={i * 60} className={i === rules.length - 1 && rules.length % 2 === 1 ? "md:col-span-2" : ""}>
             <div className="flex items-start gap-4 bg-white/60 border border-cherry/10 rounded-2xl p-5 h-full">
-              <div className="shrink-0 mt-0.5" style={{ color: "var(--gold)" }}>{rule.icon}</div>
+              <div className="shrink-0 mt-0.5" style={{ color: "#353f2a" }}>{rule.icon}</div>
               <p className="font-body text-sm text-charcoal/85 leading-relaxed">{rule.text}</p>
             </div>
           </FadeUp>
         ))}
       </div>
+
+      <FadeUp delay={200}>
+        <p className="font-body text-charcoal/70 text-center max-w-xl mx-auto mt-12">{tr("houseRulesOutro")}</p>
+      </FadeUp>
     </div>
   );
 }

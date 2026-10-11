@@ -24,7 +24,7 @@ const dict: Dict = {
 
   factGuests: { en: "Sleeps up to 6", de: "Bis zu 6 Gäste" },
   factBedrooms: { en: "2 Bedrooms + Sofa Bed", de: "2 Schlafzimmer + Schlafsofa" },
-  factBaby: { en: "Travel Cot & High Chair", de: "Reisebett & Hochstuhl" },
+  factBaby: { en: "Baby-Friendly", de: "Babyfreundlich" },
   factKitchen: { en: "Full Kitchen", de: "Volle Küche" },
   factParking: { en: "Free Parking", de: "Kostenloser Parkplatz" },
   factWifi: { en: "Fast Wi-Fi", de: "Schnelles WLAN" },
@@ -41,8 +41,8 @@ const dict: Dict = {
   },
   highlight2Title: { en: "A Quiet, Green Location", de: "Eine ruhige, grüne Lage" },
   highlight2Text: {
-    en: "A quiet, residential street in Višnjik. Fifteen minutes on foot to Baščaršija (Old Town), with bakeries and supermarkets close by. Clinics and the main medical area are nearby too.",
-    de: "Eine ruhige Wohnstraße in Višnjik. Nur 15 Gehminuten bis Baščaršija (Altstadt), mit Bäckereien und Supermärkten in der Nähe. Auch Kliniken und Sarajevos medizinischer Bereich sind schnell erreichbar."
+    en: "A quiet, residential street in Višnjik. Fifteen minutes on foot to Baščaršija (Old Town), with bakeries and supermarkets close by. Doctors, clinics and the main medical area are nearby too.",
+    de: "Eine ruhige Wohnstraße in Višnjik. Nur 15 Gehminuten bis Baščaršija (Altstadt), mit Bäckereien und Supermärkten in der Nähe. Auch Ärzte, Kliniken und Sarajevos medizinischer Bereich sind schnell erreichbar."
   },
   highlight3Title: { en: "Made for Family Visits", de: "Gemacht für Familienbesuche" },
   highlight3Text: {
@@ -57,8 +57,8 @@ const dict: Dict = {
 
   extendedStayTitle: { en: "A Home Base for Longer Family Stays", de: "Eine Basis für längere Familienaufenthalte" },
   extendedStayText: {
-    en: "Whether you are coming to see family in Sarajevo, travelling with kids, or working remotely, the full kitchen and quiet neighbourhood make a comfortable home base for a longer stay. Appointments and recovery fit in easily too.",
-    de: "Ob Sie Familie in Sarajevo besuchen, mit Kindern reisen oder remote arbeiten: Die voll ausgestattete Küche und die ruhige Umgebung bieten eine bequeme Basis für längere Aufenthalte. Auch Termine und Erholung lassen sich hier gut unterbringen."
+    en: "Whether you are coming to see family in Sarajevo, travelling with kids, or working remotely, the full kitchen and quiet neighbourhood make a comfortable home base for a longer stay. Doctor's visits, treatments and recovery fit in easily too.",
+    de: "Ob Sie Familie in Sarajevo besuchen, mit Kindern reisen oder remote arbeiten: Die voll ausgestattete Küche und die ruhige Umgebung bieten eine bequeme Basis für längere Aufenthalte. Auch Arzttermine, Behandlungen und Erholung lassen sich hier gut unterbringen."
   },
 
   galleryTitle: { en: "A Look Inside", de: "Ein Blick ins Innere" },
@@ -91,8 +91,8 @@ const dict: Dict = {
     de: "Višnjik bietet die perfekte Balance. Es ist ruhig, grün und wohnlich, und dennoch nur einen kurzen Spaziergang vom pulsierenden historischen Herzen Sarajevos entfernt. Charmante niedrige Gebäude, baumbestandene Straßen und ein starkes Gemeinschaftsgefühl treffen auf Bäckereien, Supermärkte und authentische lokale Lokale direkt um die Ecke."
   },
   neighbourhoodMedical: {
-    en: "Families visiting relatives will love how quiet and green it is here, with the city centre within walking distance. Clinics and medical services are close by as well, which is handy if an appointment is part of your trip.",
-    de: "Familien, die Verwandte besuchen, schätzen die Ruhe und das Grün hier, mit dem Stadtzentrum in Gehdistanz. Auch Kliniken und medizinische Angebote sind in der Nähe, praktisch, falls ein Termin zur Reise gehört."
+    en: "Families visiting relatives, little ones included, will love how quiet and green it is here, with the city centre within walking distance. Doctors, clinics and medical services are close by as well, which is handy if a doctor's visit, treatment or appointment is part of your trip.",
+    de: "Familien, die Verwandte besuchen, auch mit den Kleinsten, schätzen die Ruhe und das Grün hier, mit dem Stadtzentrum in Gehdistanz. Auch Ärzte, Kliniken und medizinische Angebote sind in der Nähe, praktisch, falls ein Arztbesuch, eine Behandlung oder ein Termin zur Reise gehört."
   },
 
   reviewsTitle: { en: "What Our Guests Say", de: "Was unsere Gäste sagen" },
@@ -111,48 +111,48 @@ const dict: Dict = {
 
   houseRulesTitle: { en: "House Rules", de: "Hausordnung" },
   houseRulesIntro: {
-    en: "A few simple guidelines to help everyone feel at home during their stay.",
-    de: "Ein paar einfache Hinweise, damit sich jeder während seines Aufenthalts wie zuhause fühlt."
+    en: "A home away from home works best with a few gentle rules. Here is what helps everyone, guests and neighbours alike, feel at ease.",
+    de: "Ein Zuhause auf Zeit funktioniert am besten mit ein paar sanften Regeln. So fühlen sich alle wohl, Gäste wie Nachbarn."
   },
   houseRule1: {
-    en: "Please take your shoes off at the door. We've left slippers for you if your feet get cold.",
-    de: "Bitte ziehen Sie an der Tür Ihre Schuhe aus. Wir haben Hausschuhe für Sie bereitgestellt, falls Ihnen kalt wird."
+    en: "Shoes off at the door, please. Slippers are waiting for you, so your feet stay warm and the floors stay happy.",
+    de: "Bitte lassen Sie die Schuhe an der Tür. Hausschuhe warten schon auf Sie, damit Ihre Füße warm bleiben und der Boden sich freut."
   },
   houseRule2: {
-    en: "Treat the apartment like your own home: please keep it clean and tidy throughout your stay.",
-    de: "Behandeln Sie das Apartment wie Ihr eigenes Zuhause: Bitte halten Sie es während Ihres Aufenthalts sauber und ordentlich."
+    en: "Treat the apartment like your own home. Keep it tidy, handle things with care, and tell me right away if something breaks. It happens!",
+    de: "Behandeln Sie das Apartment wie Ihr eigenes Zuhause: Halten Sie es ordentlich, gehen Sie sorgsam mit allem um und sagen Sie mir gleich Bescheid, falls etwas kaputtgeht. Das kann passieren!"
   },
   houseRule3: {
-    en: "Please handle furniture, appliances and decor with care, and let us know right away if anything gets damaged or broken.",
-    de: "Bitte gehen Sie sorgsam mit Möbeln, Geräten und Dekoration um und informieren Sie uns sofort, falls etwas beschädigt wird oder kaputtgeht."
+    en: "No smoking permitted. We want the apartment to stay fresh for you and for every guest after you.",
+    de: "Rauchen ist nicht gestattet. So bleibt das Apartment frisch, für Sie und für jeden Gast nach Ihnen."
   },
   houseRule4: {
-    en: "No smoking inside the apartment.",
-    de: "Rauchen im Apartment ist nicht erlaubt."
+    en: "No parties or events. This is a place for calm evenings, family dinners and good sleep.",
+    de: "Keine Partys oder Veranstaltungen. Dies ist ein Ort für ruhige Abende, Familienessen und guten Schlaf."
   },
   houseRule5: {
-    en: "No parties or events.",
-    de: "Keine Partys oder Veranstaltungen."
+    en: "Quiet hours are from 22:00 to 08:00. The neighbours are lovely, and the little ones sleep better too.",
+    de: "Ruhezeiten gelten von 22:00 bis 08:00 Uhr. Die Nachbarn sind reizend, und die Kleinen schlafen auch besser."
   },
   houseRule6: {
-    en: "Quiet hours are from 22:00 to 08:00, so please be considerate of the neighbours.",
-    de: "Ruhezeiten gelten von 22:00 bis 08:00 Uhr, bitte nehmen Sie Rücksicht auf die Nachbarn."
+    en: "Additional guests are allowed only upon agreement with the host. Please tell me in advance and we will sort it out together.",
+    de: "Zusätzliche Gäste sind nur nach Absprache mit der Gastgeberin erlaubt. Sagen Sie mir bitte vorher Bescheid, dann finden wir gemeinsam eine Lösung."
   },
   houseRule7: {
-    en: "Only registered guests may stay overnight; please let us know in advance about any visitors.",
-    de: "Nur angemeldete Gäste dürfen übernachten; bitte informieren Sie uns im Voraus über etwaige Besucher."
+    en: "No pets. Service dogs are the one exception and are very welcome.",
+    de: "Keine Haustiere. Assistenzhunde sind die einzige Ausnahme und herzlich willkommen."
   },
   houseRule8: {
-    en: "No pets, unless agreed with the host in advance.",
-    de: "Haustiere sind nicht erlaubt, außer nach vorheriger Absprache mit der Gastgeberin."
+    en: "Check-in is from 15:00 and check-out is by 11:10. Need a little flexibility? Just ask and I will do my best.",
+    de: "Check-in ist ab 15:00 Uhr, Check-out bis 11:10 Uhr. Brauchen Sie etwas Flexibilität? Fragen Sie einfach, ich tue mein Bestes."
   },
   houseRule9: {
-    en: "Check-in is from 14:00 and check-out by 11:00, unless otherwise arranged with the host.",
-    de: "Check-in ist ab 14:00 Uhr und Check-out bis 11:00 Uhr, sofern nicht anders mit der Gastgeberin vereinbart."
+    en: "Before you head out, please lock the door and switch off the lights, AC and appliances. Then go enjoy Sarajevo!",
+    de: "Bevor Sie losziehen, schließen Sie bitte die Tür ab und schalten Sie Licht, Klimaanlage und Geräte aus. Dann viel Freude in Sarajevo!"
   },
-  houseRule10: {
-    en: "Before you leave, please lock the door and switch off the lights, AC and any appliances.",
-    de: "Bitte schließen Sie beim Verlassen die Tür ab und schalten Sie Licht, Klimaanlage und Geräte aus."
+  houseRulesOutro: {
+    en: "Thank you for treating my home as if it were yours. Enjoy every moment in Sarajevo! 🍒",
+    de: "Danke, dass Sie mein Zuhause behandeln, als wäre es Ihres. Genießen Sie jeden Moment in Sarajevo! 🍒"
   }
 };
 
