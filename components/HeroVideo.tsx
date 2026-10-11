@@ -12,7 +12,7 @@ export default function HeroVideo() {
         preload="metadata"
         poster="/images/cherry-magic-cover.webp"
       >
-        <source src="/videos/cherry-magic-apartment-walkthrough-web.mp4" type="video/mp4" />
+        <source src="/videos/cherry-magic-sarajevo-appartment-walkthrough.mp4" type="video/mp4" />
       </video>
       <div className="absolute inset-0" style={{ background: "var(--hero-overlay)" }} />
     </div>
