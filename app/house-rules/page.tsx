@@ -2,21 +2,31 @@
 
 import { useLang } from "@/lib/i18n";
 import FadeUp from "@/components/FadeUp";
-import { Footprints, Sparkles, CigaretteOff, PartyPopper, Moon, Users, PawPrint, Clock, DoorClosed } from "lucide-react";
+import { Clock, ShieldCheck, Footprints, Sparkles, Shirt, CigaretteOff, PartyPopper, Moon, Users, PawPrint, Trash2, DoorClosed, GlassWater, Car, Waves, Baby } from "lucide-react";
 
 export default function HouseRulesPage() {
   const { tr } = useLang();
 
   const rules = [
-    { icon: <Footprints size={22} />, text: tr("houseRule1") },
-    { icon: <Sparkles size={22} />, text: tr("houseRule2") },
-    { icon: <CigaretteOff size={22} />, text: tr("houseRule3") },
-    { icon: <PartyPopper size={22} />, text: tr("houseRule4") },
-    { icon: <Moon size={22} />, text: tr("houseRule5") },
-    { icon: <Users size={22} />, text: tr("houseRule6") },
-    { icon: <PawPrint size={22} />, text: tr("houseRule7") },
-    { icon: <Clock size={22} />, text: tr("houseRule8") },
-    { icon: <DoorClosed size={22} />, text: tr("houseRule9") }
+    { icon: <Clock size={22} />, text: tr("houseRule1") },
+    { icon: <ShieldCheck size={22} />, text: tr("houseRule2") },
+    { icon: <Footprints size={22} />, text: tr("houseRule3") },
+    { icon: <Sparkles size={22} />, text: tr("houseRule4") },
+    { icon: <Shirt size={22} />, text: tr("houseRule5") },
+    { icon: <CigaretteOff size={22} />, text: tr("houseRule6") },
+    { icon: <PartyPopper size={22} />, text: tr("houseRule7") },
+    { icon: <Moon size={22} />, text: tr("houseRule8") },
+    { icon: <Users size={22} />, text: tr("houseRule9") },
+    { icon: <PawPrint size={22} />, text: tr("houseRule10") },
+    { icon: <Trash2 size={22} />, text: tr("houseRule11") },
+    { icon: <DoorClosed size={22} />, text: tr("houseRule12") }
+  ];
+
+  const goodToKnow = [
+    { icon: <GlassWater size={22} />, text: tr("houseGood1") },
+    { icon: <Car size={22} />, text: tr("houseGood2") },
+    { icon: <Waves size={22} />, text: tr("houseGood3") },
+    { icon: <Baby size={22} />, text: tr("houseGood4") }
   ];
 
   return (
@@ -29,10 +39,24 @@ export default function HouseRulesPage() {
 
       <div className="grid gap-5 md:grid-cols-2">
         {rules.map((rule, i) => (
-          <FadeUp key={i} delay={i * 60} className={i === rules.length - 1 && rules.length % 2 === 1 ? "md:col-span-2" : ""}>
+          <FadeUp key={i} delay={i * 60}>
             <div className="flex items-start gap-4 bg-white/60 border border-cherry/10 rounded-2xl p-5 h-full">
               <div className="shrink-0 mt-0.5" style={{ color: "#353f2a" }}>{rule.icon}</div>
               <p className="font-body text-sm text-charcoal/85 leading-relaxed">{rule.text}</p>
+            </div>
+          </FadeUp>
+        ))}
+      </div>
+
+      <FadeUp>
+        <h2 className="text-center mt-20 mb-10">{tr("houseGoodTitle")}</h2>
+      </FadeUp>
+      <div className="grid gap-5 md:grid-cols-2">
+        {goodToKnow.map((item, i) => (
+          <FadeUp key={i} delay={i * 60}>
+            <div className="flex items-start gap-4 bg-white/60 border border-cherry/10 rounded-2xl p-5 h-full">
+              <div className="shrink-0 mt-0.5" style={{ color: "#353f2a" }}>{item.icon}</div>
+              <p className="font-body text-sm text-charcoal/85 leading-relaxed">{item.text}</p>
             </div>
           </FadeUp>
         ))}

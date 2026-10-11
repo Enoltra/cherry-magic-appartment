@@ -115,40 +115,69 @@ const dict: Dict = {
     de: "Ein Zuhause auf Zeit funktioniert am besten mit ein paar sanften Regeln. So fühlen sich alle wohl, Gäste wie Nachbarn."
   },
   houseRule1: {
+    en: "Check-in is from 15:00 (earlier on request) and check-out is by 11:00. Need a little flexibility? Just ask and I will do my best.",
+    de: "Check-in ist ab 15:00 Uhr (früher auf Anfrage), Check-out bis 11:00 Uhr. Brauchen Sie etwas Flexibilität? Fragen Sie einfach, ich tue mein Bestes."
+  },
+  houseRule2: {
+    en: "Please send me a photo of the passport or ID of every guest before or on arrival. It is needed for the official tourist registration.",
+    de: "Bitte senden Sie mir vor oder bei der Ankunft ein Foto des Reisepasses oder Ausweises aller Gäste. Es wird für die offizielle Touristenanmeldung benötigt."
+  },
+  houseRule3: {
     en: "Shoes off at the door, please. Slippers are waiting for you, so your feet stay warm and the floors stay happy.",
     de: "Bitte lassen Sie die Schuhe an der Tür. Hausschuhe warten schon auf Sie, damit Ihre Füße warm bleiben und der Boden sich freut."
   },
-  houseRule2: {
+  houseRule4: {
     en: "Treat the apartment like your own home. Keep it tidy, handle things with care, and tell me right away if something breaks. It happens!",
     de: "Behandeln Sie das Apartment wie Ihr eigenes Zuhause: Halten Sie es ordentlich, gehen Sie sorgsam mit allem um und sagen Sie mir gleich Bescheid, falls etwas kaputtgeht. Das kann passieren!"
   },
-  houseRule3: {
+  houseRule5: {
+    en: "Please do not iron on the beds. The iron and a folding ironing board live in the tall kitchen cabinet, and the kitchen island has a handy socket.",
+    de: "Bitte bügeln Sie nicht auf den Betten. Bügeleisen und Klappbügelbrett finden Sie im hohen Küchenschrank, und auf der Küchentheke gibt es eine praktische Steckdose."
+  },
+  houseRule6: {
     en: "No smoking permitted. We want the apartment to stay fresh for you and for every guest after you.",
     de: "Rauchen ist nicht gestattet. So bleibt das Apartment frisch, für Sie und für jeden Gast nach Ihnen."
   },
-  houseRule4: {
+  houseRule7: {
     en: "No parties or events. This is a place for calm evenings, family dinners and good sleep.",
     de: "Keine Partys oder Veranstaltungen. Dies ist ein Ort für ruhige Abende, Familienessen und guten Schlaf."
   },
-  houseRule5: {
+  houseRule8: {
     en: "Quiet hours are from 22:00 to 08:00. The neighbours are lovely, and the little ones sleep better too.",
     de: "Ruhezeiten gelten von 22:00 bis 08:00 Uhr. Die Nachbarn sind reizend, und die Kleinen schlafen auch besser."
   },
-  houseRule6: {
-    en: "Additional guests are allowed only upon agreement with the host. Please tell me in advance and we will sort it out together.",
-    de: "Zusätzliche Gäste sind nur nach Absprache mit der Gastgeberin erlaubt. Sagen Sie mir bitte vorher Bescheid, dann finden wir gemeinsam eine Lösung."
+  houseRule9: {
+    en: "Additional guests are allowed only upon agreement with the host. Please tell me in advance, as an extra charge per person per night applies. Unannounced guests are not possible.",
+    de: "Zusätzliche Gäste sind nur nach Absprache mit der Gastgeberin erlaubt. Bitte sagen Sie mir vorher Bescheid, denn pro Person und Nacht fällt ein Aufpreis an. Unangemeldete Gäste sind nicht möglich."
   },
-  houseRule7: {
+  houseRule10: {
     en: "No pets. Service dogs are the one exception and are very welcome.",
     de: "Keine Haustiere. Assistenzhunde sind die einzige Ausnahme und herzlich willkommen."
   },
-  houseRule8: {
-    en: "Check-in is from 15:00 and check-out is by 11:10. Need a little flexibility? Just ask and I will do my best.",
-    de: "Check-in ist ab 15:00 Uhr, Check-out bis 11:10 Uhr. Brauchen Sie etwas Flexibilität? Fragen Sie einfach, ich tue mein Bestes."
+  houseRule11: {
+    en: "Leave your rubbish inside the apartment and I will take care of it. Please never leave it in front of the building. Used diapers go in the containers on the main street.",
+    de: "Lassen Sie den Müll einfach im Apartment, ich kümmere mich darum. Bitte stellen Sie nichts vor das Gebäude oder die Eingangstür. Gebrauchte Windeln gehören in die Container an der Hauptstraße."
   },
-  houseRule9: {
-    en: "Before you head out, please lock the door and switch off the lights, AC and appliances. Then go enjoy Sarajevo!",
-    de: "Bevor Sie losziehen, schließen Sie bitte die Tür ab und schalten Sie Licht, Klimaanlage und Geräte aus. Dann viel Freude in Sarajevo!"
+  houseRule12: {
+    en: "Before you leave, please put used dishes in the dishwasher (no need to run it), switch off the lights, AC and appliances, return the keys and send me a quick message that you have checked out.",
+    de: "Bevor Sie abreisen, stellen Sie bitte benutztes Geschirr in die Spülmaschine (sie muss nicht laufen), schalten Sie Licht, Klimaanlage und Geräte aus, geben Sie die Schlüssel zurück und schreiben Sie mir kurz, dass Sie ausgecheckt haben."
+  },
+  houseGoodTitle: { en: "Good to Know", de: "Gut zu wissen" },
+  houseGood1: {
+    en: "The tap water is safe to drink, straight from the kitchen.",
+    de: "Das Leitungswasser ist sicher und kann direkt aus dem Hahn in der Küche getrunken werden."
+  },
+  houseGood2: {
+    en: "Free parking in front of the building. It gets busy until about 13:00 and from 16:00 to 17:00 because of the nearby Clinical Centre. Paid parking across the street costs 1 KM per hour, 24/7.",
+    de: "Kostenloses Parken vor dem Gebäude. Bis etwa 13:00 Uhr und von 16:00 bis 17:00 Uhr ist es wegen des nahen Klinikzentrums voller. Gegenüber gibt es einen kostenpflichtigen Parkplatz, 1 KM pro Stunde, rund um die Uhr."
+  },
+  houseGood3: {
+    en: "A washing machine and dryer are available for stays of 5 nights or more, on request.",
+    de: "Waschmaschine und Trockner stehen bei Aufenthalten ab 5 Nächten auf Anfrage zur Verfügung."
+  },
+  houseGood4: {
+    en: "Baby cot and high chair? Just let me know before you arrive and everything will be ready.",
+    de: "Babybett und Hochstuhl gewünscht? Sagen Sie mir einfach vor der Anreise Bescheid, dann ist alles vorbereitet."
   },
   houseRulesOutro: {
     en: "Thank you for treating my home as if it were yours. Enjoy every moment in Sarajevo! 🍒",
