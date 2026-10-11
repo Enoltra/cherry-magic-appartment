@@ -27,7 +27,7 @@ export default function BlogPage() {
               alt={
                 en
                   ? "Bascarsija old town square in Sarajevo with Sebilj fountain and Ottoman-era buildings"
-                  : "Bascarsija Altstadtplatz in Sarajevo mit dem Sebilj-Brunnen und osmanischen Gebauden"
+                  : "Bascarsija Altstadtplatz in Sarajevo mit dem Sebilj-Brunnen und osmanischen Gebäuden"
               }
               fill
               className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -35,7 +35,7 @@ export default function BlogPage() {
           </div>
           <div className="p-6">
             <h3 className="!text-lg !text-cherry mb-2 group-hover:underline">
-              {en ? "10 Best Things to Do in Sarajevo" : "10 Beste Dinge, die man in Sarajevo tun kann"}
+              {en ? "10 Best Things to Do in Sarajevo" : "Die 10 besten Dinge, die du in Sarajevo tun kannst"}
             </h3>
             <p className="font-body text-charcoal/70 text-sm leading-relaxed">
               {en
@@ -51,7 +51,7 @@ export default function BlogPage() {
 
       <FadeUp delay={150}>
         <p className="font-body text-charcoal/60 text-sm text-center mt-12">
-          {en ? "More travel guides coming soon." : "Weitere Reisefuhrer folgen in Kurze."}
+          {en ? "More travel guides coming soon." : "Weitere Reiseführer folgen in Kürze."}
         </p>
       </FadeUp>
     </div>
