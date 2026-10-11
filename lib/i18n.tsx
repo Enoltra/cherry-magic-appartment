@@ -13,22 +13,24 @@ const dict: Dict = {
   navBook: { en: "Book Now", de: "Jetzt buchen" },
 
   heroTitle: {
-    en: "A Bright, Modern Sanctuary in Sarajevo's Green Heart",
-    de: "Eine helle, moderne Oase im grünen Herzen von Sarajevo"
+    en: "A Bright, Modern Home for Family Visits in Sarajevo's Green Heart",
+    de: "Ein helles, modernes Zuhause für Familienbesuche im grünen Herzen von Sarajevo"
   },
   heroSubtitle: {
-    en: "A fully renovated 50m² apartment in Višnjik for up to six guests. Quiet, leafy and family-friendly, a short walk from Baščaršija and the city centre.",
-    de: "Ein komplett renoviertes 50 m² Apartment in Višnjik für bis zu sechs Gäste. Ruhig, grün und familienfreundlich, nur einen kurzen Spaziergang von Baščaršija und der Innenstadt entfernt."
+    en: "Room for up to six, a quiet leafy street, and everything little ones need, from a travel cot to a high chair. Baščaršija is a gentle walk away.",
+    de: "Platz für bis zu sechs Gäste, eine ruhige, grüne Straße und alles, was die Kleinen brauchen, vom Reisebett bis zum Hochstuhl. Baščaršija erreichen Sie bequem zu Fuß."
   },
   heroCta: { en: "Check Availability", de: "Verfügbarkeit prüfen" },
 
   factGuests: { en: "Sleeps up to 6", de: "Bis zu 6 Gäste" },
   factBedrooms: { en: "2 Bedrooms + Sofa Bed", de: "2 Schlafzimmer + Schlafsofa" },
+  factBaby: { en: "Travel Cot & High Chair", de: "Reisebett & Hochstuhl" },
   factKitchen: { en: "Full Kitchen", de: "Volle Küche" },
   factParking: { en: "Free Parking", de: "Kostenloser Parkplatz" },
   factWifi: { en: "Fast Wi-Fi", de: "Schnelles WLAN" },
   factAc: { en: "Air Conditioning", de: "Klimaanlage" },
   factHeating: { en: "Heating", de: "Heizung" },
+  factSelfCheckin: { en: "Easy Self Check-in", de: "Einfacher Self-Check-in" },
   factLocation: { en: "Quiet Višnjik Neighbourhood", de: "Ruhiges Viertel Višnjik" },
 
   highlightsTitle: { en: "Why Guests Love It Here", de: "Warum Gäste es hier lieben" },
@@ -39,24 +41,24 @@ const dict: Dict = {
   },
   highlight2Title: { en: "A Quiet, Green Location", de: "Eine ruhige, grüne Lage" },
   highlight2Text: {
-    en: "A quiet, residential street in Višnjik. Only 15 minutes on foot to Baščaršija (Old Town), with bakeries and supermarkets nearby, and Sarajevo's main medical area within easy reach.",
-    de: "Eine ruhige Wohnstraße in Višnjik. Nur 15 Gehminuten von Baščaršija (Altstadt) entfernt, mit Bäckereien und Supermärkten in der Nähe und Sarajevos wichtigem medizinischem Bereich in leicht erreichbarer Nähe."
+    en: "A quiet, residential street in Višnjik. Fifteen minutes on foot to Baščaršija (Old Town), with bakeries and supermarkets close by. Clinics and the main medical area are nearby too.",
+    de: "Eine ruhige Wohnstraße in Višnjik. Nur 15 Gehminuten bis Baščaršija (Altstadt), mit Bäckereien und Supermärkten in der Nähe. Auch Kliniken und Sarajevos medizinischer Bereich sind schnell erreichbar."
   },
-  highlight3Title: { en: "Space for All", de: "Platz für alle" },
+  highlight3Title: { en: "Made for Family Visits", de: "Gemacht für Familienbesuche" },
   highlight3Text: {
-    en: "Two cozy bedrooms plus a sofa bed comfortably accommodate up to six guests, including children. Ideal for family visits, reunions and small groups.",
-    de: "Zwei gemütliche Schlafzimmer plus ein Schlafsofa bieten bequem Platz für bis zu sechs Gäste, auch für Kinder. Ideal für Familienbesuche, Familientreffen und kleine Gruppen."
+    en: "Two cozy bedrooms and a sofa bed make room for up to six, children included. Grandparents, cousins and kids can all come together under one roof.",
+    de: "Zwei gemütliche Schlafzimmer und ein Schlafsofa bieten Platz für bis zu sechs Gäste, Kinder inklusive. Großeltern, Cousins und Kinder finden unter einem Dach zusammen."
   },
-  highlight4Title: { en: "Thoughtful Extras", de: "Durchdachte Extras" },
+  highlight4Title: { en: "A Baby-Friendly Stay", de: "Ein babyfreundlicher Aufenthalt" },
   highlight4Text: {
-    en: "Baby- and family-friendly on request: a travel cot, high chair, toys, safety locks, and a toddler toilet seat with a step stool. Plus a welcome pack with local treats, hotel-quality toiletries, and a safety deposit box.",
-    de: "Baby- und familienfreundlich auf Anfrage: Reisebett, Hochstuhl, Spielzeug, Sicherheitsschlösser sowie ein Kindertoilettensitz mit Trittstufe. Dazu ein Willkommenspaket mit lokalen Köstlichkeiten, hotelähnlichen Pflegeprodukten und ein Safe."
+    en: "Travelling with a baby? On request we set up a travel cot, high chair, toys, safety locks, and a toddler toilet seat with a step stool. A welcome pack with local treats, hotel-quality toiletries and a safety deposit box completes the picture.",
+    de: "Mit Baby unterwegs? Auf Anfrage richten wir Reisebett, Hochstuhl, Spielzeug, Sicherheitsschlösser sowie einen Kindertoilettensitz mit Trittstufe für Sie ein. Ein Willkommenspaket mit lokalen Köstlichkeiten, hotelähnlichen Pflegeprodukten und einem Safe rundet den Aufenthalt ab."
   },
 
-  extendedStayTitle: { en: "Perfect for Extended Stays", de: "Perfekt für längere Aufenthalte" },
+  extendedStayTitle: { en: "A Home Base for Longer Family Stays", de: "Eine Basis für längere Familienaufenthalte" },
   extendedStayText: {
-    en: "Whether you are visiting family in Sarajevo, exploring the Balkans with your kids, working remotely, or here for an appointment or recovery, our fully-equipped kitchen and quiet neighbourhood make a comfortable home base for a longer stay.",
-    de: "Ob Sie Familie in Sarajevo besuchen, mit Kindern den Balkan erkunden, remote arbeiten oder wegen eines Termins oder zur Erholung hier sind, unsere voll ausgestattete Küche und die ruhige Umgebung bieten eine bequeme Basis für einen längeren Aufenthalt."
+    en: "Whether you are coming to see family in Sarajevo, travelling with kids, or working remotely, the full kitchen and quiet neighbourhood make a comfortable home base for a longer stay. Appointments and recovery fit in easily too.",
+    de: "Ob Sie Familie in Sarajevo besuchen, mit Kindern reisen oder remote arbeiten: Die voll ausgestattete Küche und die ruhige Umgebung bieten eine bequeme Basis für längere Aufenthalte. Auch Termine und Erholung lassen sich hier gut unterbringen."
   },
 
   galleryTitle: { en: "A Look Inside", de: "Ein Blick ins Innere" },
@@ -89,8 +91,8 @@ const dict: Dict = {
     de: "Višnjik bietet die perfekte Balance. Es ist ruhig, grün und wohnlich, und dennoch nur einen kurzen Spaziergang vom pulsierenden historischen Herzen Sarajevos entfernt. Charmante niedrige Gebäude, baumbestandene Straßen und ein starkes Gemeinschaftsgefühl treffen auf Bäckereien, Supermärkte und authentische lokale Lokale direkt um die Ecke."
   },
   neighbourhoodMedical: {
-    en: "Ideal for families and visiting relatives who want to explore Sarajevo from one of the city's most beautiful, quiet and green neighbourhoods, within walking distance of the city centre. The location is also practical for guests with appointments or recovery, with several clinics and medical services within easy reach.",
-    de: "Ideal für Familien und Besuche bei Verwandten, die Sarajevo aus einem der schönsten, ruhigsten und grünsten Viertel der Stadt erkunden möchten, in Gehdistanz zum Stadtzentrum. Die Lage ist zudem praktisch für Gäste mit Terminen oder zur Erholung, da mehrere Kliniken und medizinische Angebote leicht erreichbar sind."
+    en: "Families visiting relatives will love how quiet and green it is here, with the city centre within walking distance. Clinics and medical services are close by as well, which is handy if an appointment is part of your trip.",
+    de: "Familien, die Verwandte besuchen, schätzen die Ruhe und das Grün hier, mit dem Stadtzentrum in Gehdistanz. Auch Kliniken und medizinische Angebote sind in der Nähe, praktisch, falls ein Termin zur Reise gehört."
   },
 
   reviewsTitle: { en: "What Our Guests Say", de: "Was unsere Gäste sagen" },
@@ -113,8 +115,8 @@ const dict: Dict = {
     de: "Ein paar einfache Hinweise, damit sich jeder während seines Aufenthalts wie zuhause fühlt."
   },
   houseRule1: {
-    en: "Please take your shoes off at the door — we've left slippers for you if your feet get cold.",
-    de: "Bitte ziehen Sie an der Tür Ihre Schuhe aus — wir haben Hausschuhe für Sie bereitgestellt, falls Ihnen kalt wird."
+    en: "Please take your shoes off at the door. We've left slippers for you if your feet get cold.",
+    de: "Bitte ziehen Sie an der Tür Ihre Schuhe aus. Wir haben Hausschuhe für Sie bereitgestellt, falls Ihnen kalt wird."
   },
   houseRule2: {
     en: "Treat the apartment like your own home: please keep it clean and tidy throughout your stay.",
@@ -133,8 +135,8 @@ const dict: Dict = {
     de: "Keine Partys oder Veranstaltungen."
   },
   houseRule6: {
-    en: "Quiet hours are from 22:00 to 08:00 — please be considerate of the neighbours.",
-    de: "Ruhezeiten gelten von 22:00 bis 08:00 Uhr — bitte nehmen Sie Rücksicht auf die Nachbarn."
+    en: "Quiet hours are from 22:00 to 08:00, so please be considerate of the neighbours.",
+    de: "Ruhezeiten gelten von 22:00 bis 08:00 Uhr, bitte nehmen Sie Rücksicht auf die Nachbarn."
   },
   houseRule7: {
     en: "Only registered guests may stay overnight; please let us know in advance about any visitors.",
