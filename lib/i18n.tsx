@@ -108,6 +108,7 @@ const dict: Dict = {
   footerBook: { en: "Book Your Stay", de: "Buchen Sie Ihren Aufenthalt" },
   footerNearby: { en: "Close to Baščaršija & the city centre", de: "Nahe Baščaršija & der Innenstadt" },
   navHouseRules: { en: "House Rules", de: "Hausordnung" },
+  navGuestInfo: { en: "Guest Info", de: "Gästeinfo" },
 
   houseRulesTitle: { en: "House Rules", de: "Hausordnung" },
   houseRulesIntro: {
@@ -162,7 +163,6 @@ const dict: Dict = {
     en: "Before you leave, please put used dishes in the dishwasher (no need to run it), switch off the lights, AC and appliances, return the keys and send me a quick message that you have checked out.",
     de: "Bevor Sie abreisen, stellen Sie bitte benutztes Geschirr in die Spülmaschine (sie muss nicht laufen), schalten Sie Licht, Klimaanlage und Geräte aus, geben Sie die Schlüssel zurück und schreiben Sie mir kurz, dass Sie ausgecheckt haben."
   },
-  houseGoodTitle: { en: "Good to Know", de: "Gut zu wissen" },
   houseGood1: {
     en: "The tap water is safe to drink, straight from the kitchen.",
     de: "Das Leitungswasser ist sicher und kann direkt aus dem Hahn in der Küche getrunken werden."
@@ -179,9 +179,63 @@ const dict: Dict = {
     en: "Baby cot and high chair? Just let me know before you arrive and everything will be ready.",
     de: "Babybett und Hochstuhl gewünscht? Sagen Sie mir einfach vor der Anreise Bescheid, dann ist alles vorbereitet."
   },
+  houseRulesMore: {
+    en: "Looking for parking, laundry or local tips?",
+    de: "Auf der Suche nach Parken, Wäsche oder lokalen Tipps?"
+  },
   houseRulesOutro: {
     en: "Thank you for treating my home as if it were yours. Enjoy every moment in Sarajevo! 🍒",
     de: "Danke, dass Sie mein Zuhause behandeln, als wäre es Ihres. Genießen Sie jeden Moment in Sarajevo! 🍒"
+  },
+
+  guestInfoTitle: { en: "Guest Info", de: "Gästeinfo" },
+  guestInfoIntro: {
+    en: "Everything that makes your stay smooth, from the day you book to the moment you wave goodbye.",
+    de: "Alles, was Ihren Aufenthalt leicht macht, vom Tag der Buchung bis zum Abschied."
+  },
+  guestSectionBefore: { en: "Before You Arrive", de: "Vor Ihrer Anreise" },
+  guestSectionStay: { en: "During Your Stay", de: "Während Ihres Aufenthalts" },
+  guestSectionLeave: { en: "Before You Leave", de: "Vor Ihrer Abreise" },
+  guestSectionLocal: { en: "Around the Corner", de: "Gleich um die Ecke" },
+  guestArrive: {
+    en: "Your door code and step-by-step arrival details reach you privately after booking, so there is nothing to memorise in advance.",
+    de: "Ihren Türcode und die Ankunftsdetails Schritt für Schritt erhalten Sie nach der Buchung privat, Sie müssen sich vorab nichts merken."
+  },
+  guestStay1: {
+    en: "Coffee, tea, sugar and basic cooking spices are yours to enjoy. Dishwasher tablets are in the drawer next to the dishwasher.",
+    de: "Kaffee, Tee, Zucker und einfache Gewürze zum Kochen stehen Ihnen zur Verfügung. Die Spülmaschinentabs liegen in der Schublade neben der Spülmaschine."
+  },
+  guestStay2: {
+    en: "Towels, toiletries, a hair dryer and a first aid kit are all in the bathroom.",
+    de: "Handtücher, Pflegeprodukte, ein Föhn und ein Erste-Hilfe-Set finden Sie im Badezimmer."
+  },
+  guestStay3: {
+    en: "The air conditioning remote lives above the kitchen island and handles heating, cooling and fan speed.",
+    de: "Die Fernbedienung der Klimaanlage liegt über der Küchentheke und steuert Heizen, Kühlen und Lüfterstufe."
+  },
+  guestLocal1: {
+    en: "Bosfor Bakery: excellent pastries and croissants, just down the street.",
+    de: "Bäckerei Bosfor: ausgezeichnetes Gebäck und Croissants, nur ein paar Schritte die Straße entlang."
+  },
+  guestLocal2: {
+    en: "Amko grocery: basic food and hygiene items, in the same building as the bakery.",
+    de: "Amko Lebensmittelgeschäft: Grundnahrungsmittel und Hygieneartikel, im selben Gebäude wie die Bäckerei."
+  },
+  guestLocal3: {
+    en: "24-hour supermarket, open on Sundays too: fresh fruit, vegetables and everything else you need, at the first major intersection.",
+    de: "24-Stunden-Supermarkt, auch sonntags geöffnet: frisches Obst, Gemüse und alles, was Sie brauchen, an der ersten großen Kreuzung."
+  },
+  guestLocal4: {
+    en: "Buregdžinica and ćevabdžinica: authentic Bosnian specialties, across from the 24-hour supermarket.",
+    de: "Buregdžinica und Ćevabdžinica: authentische bosnische Spezialitäten, gegenüber vom 24-Stunden-Supermarkt."
+  },
+  guestLocal5: {
+    en: "Two pharmacies and a Konzum supermarket are a short walk away.",
+    de: "Zwei Apotheken und ein Konzum-Supermarkt sind nur einen kurzen Spaziergang entfernt."
+  },
+  guestInfoOutro: {
+    en: "Anything missing? Message me any time, I am happy to help. 🍒",
+    de: "Fehlt etwas? Schreiben Sie mir jederzeit, ich helfe gern. 🍒"
   }
 };
 

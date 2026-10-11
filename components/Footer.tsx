@@ -29,6 +29,7 @@ export default function Footer() {
           <Link className="block hover:text-cherry-light" href="/gallery">{tr("navGallery")}</Link>
           <Link className="block hover:text-cherry-light" href="/blog">{tr("navBlog")}</Link>
           <Link className="block hover:text-cherry-light" href="/house-rules">{tr("navHouseRules")}</Link>
+          <Link className="block hover:text-cherry-light" href="/guest-info">{tr("navGuestInfo")}</Link>
         </div>
       </div>
       <div className="text-center text-xs text-cream/40 pb-6 font-body">
