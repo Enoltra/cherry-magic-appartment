@@ -5,6 +5,9 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL || "https://cherry-magic-appartment.vercel.app"
+  ),
   title: "Cherry Magic Apartment | Sarajevo",
   description: "A bright, modern apartment in Sarajevo's green Višnjik neighbourhood."
 };
