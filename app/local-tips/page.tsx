@@ -3,12 +3,13 @@
 import { ReactNode } from "react";
 import { useLang } from "@/lib/i18n";
 import FadeUp from "@/components/FadeUp";
-import { GlassWater, Car, Clock, ShieldCheck, ShoppingBag, Store, Utensils, Pill, Fuel, PhoneCall } from "lucide-react";
+import { GlassWater, Car, Clock, ShieldCheck, ShoppingBag, Store, Utensils, Pill, Fuel, PhoneCall, MapPin, ExternalLink } from "lucide-react";
 
 type TipCard = {
   icon: ReactNode;
   title: string;
   badge?: string;
+  mapQuery?: string;
   details: string[];
 };
 
@@ -34,6 +35,7 @@ export default function LocalTipsPage() {
       icon: <Car size={24} />,
       title: isDe ? "Parken vor Ort (Kostenlos & 24/7 Bewacht)" : "Parking: Free Street & 24/7 Paid Lot",
       badge: isDe ? "Park-Tipp" : "Parking tip",
+      mapQuery: "Bolnicka+46+Sarajevo",
       details: [
         isDe
           ? "Kostenloses Parken an der Straße direkt vor dem Gebäude. Aufgrund des nahegelegenen Klinikzentrums ist es meist bis 13:00 Uhr sowie zwischen 16:00 und 17:00 Uhr belebter."
@@ -74,6 +76,7 @@ export default function LocalTipsPage() {
       icon: <Store size={24} />,
       title: isDe ? "24-Stunden-Supermarkt (Auch Sonntags)" : "24/7 Supermarket (Open Sundays Too)",
       badge: "24/7",
+      mapQuery: "Supermarket+Bolnicka+Sarajevo",
       details: [
         isDe
           ? "An der ersten größeren Kreuzung, nur wenige Gehminuten die Straße hinunter. Perfekt für frisches Obst, Gemüse, Getränke und späte Einkäufe an jedem Wochentag."
@@ -87,6 +90,7 @@ export default function LocalTipsPage() {
       icon: <ShoppingBag size={24} />,
       title: isDe ? "Bäckerei Bosfor & Amko Markt" : "Bosfor Bakery & Amko Grocery",
       badge: isDe ? "2 Min zu Fuß" : "2 min walk",
+      mapQuery: "Pekara+Bosfor+Bolnicka+Sarajevo",
       details: [
         isDe
           ? "Bäckerei Bosfor: Hervorragendes ofenfrisches Gebäck, Brot, Burek und Croissants für ein gemütliches Frühstück in der Wohnung."
@@ -100,6 +104,7 @@ export default function LocalTipsPage() {
       icon: <ShoppingBag size={24} />,
       title: isDe ? "Konzum Supermarkt & Bäckereien" : "Konzum Supermarket (Zaim Šarac)",
       badge: isDe ? "1 Häuserblock entfernt" : "1 block up",
+      mapQuery: "Konzum+Zaim+Sarac+Sarajevo",
       details: [
         isDe
           ? "In der Zaim-Šarac-Straße (eine Ebene oberhalb des Apartments gelegen) finden Sie einen gut sortierten Konzum-Supermarkt für Ihren Wocheneinkauf."
@@ -113,6 +118,7 @@ export default function LocalTipsPage() {
       icon: <Utensils size={24} />,
       title: isDe ? "Buregdžinica & Ćevabdžinica" : "Authentic Buregdžinica & Ćevabdžinica",
       badge: isDe ? "Lokale Küche" : "Local food",
+      mapQuery: "Buregdzinica+Cevabdzinica+Bolnicka+Sarajevo",
       details: [
         isDe
           ? "Gegenüber dem 24-Stunden-Supermarkt: Echte, traditionelle bosnische Pita unter der Sač gebacken (Burek, Sirnica, Zeljanica) und frische Ćevapi im warmen Somun."
@@ -126,6 +132,7 @@ export default function LocalTipsPage() {
       icon: <Pill size={24} />,
       title: isDe ? "Apotheken in der Nähe" : "Pharmacies (Apoteka)",
       badge: isDe ? "In Gehweite" : "Walking distance",
+      mapQuery: "Apoteka+Bolnicka+Sarajevo",
       details: [
         isDe
           ? "Apotheke 1: Direkt neben der Ćevabdžinica an der Hauptkreuzung."
@@ -139,6 +146,7 @@ export default function LocalTipsPage() {
       icon: <Fuel size={24} />,
       title: isDe ? "Tankstellen in der Umgebung" : "Nearby Gas & Petrol Stations",
       badge: isDe ? "Für Autofahrer" : "For drivers",
+      mapQuery: "Energopetrol+Alipasina+Sarajevo",
       details: [
         isDe
           ? "Energopetrol (Alipašina / Koševo): Nur etwa 3 bis 5 Fahrminuten unterhalb von Višnjik an der Alipašina-Hauptstraße, sehr praktisch vor Ausflügen oder vor der Abreise."
@@ -181,12 +189,26 @@ export default function LocalTipsPage() {
                   )}
                 </div>
                 <h3 className="!text-lg !text-cherry mb-3">{item.title}</h3>
-                <div className="space-y-2 text-sm text-charcoal/85 leading-relaxed font-body">
+                <div className="space-y-2 text-sm text-charcoal/85 leading-relaxed font-body mb-4">
                   {item.details.map((d, di) => (
                     <p key={di}>{d}</p>
                   ))}
                 </div>
               </div>
+              {item.mapQuery && (
+                <div className="pt-3 border-t border-cherry/10 mt-2">
+                  <a
+                    href={`https://www.google.com/maps/search/${item.mapQuery}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-xs uppercase tracking-wide font-medium text-cherry hover:text-cherry-dark transition-colors"
+                  >
+                    <MapPin size={14} />
+                    <span>{isDe ? "Auf Karte ansehen" : "View on map"}</span>
+                    <ExternalLink size={12} />
+                  </a>
+                </div>
+              )}
             </div>
           </FadeUp>
         ))}
@@ -211,12 +233,26 @@ export default function LocalTipsPage() {
                   )}
                 </div>
                 <h3 className="!text-base !text-charcoal mb-3 font-semibold">{item.title}</h3>
-                <div className="space-y-2 text-xs md:text-sm text-charcoal/80 leading-relaxed font-body">
+                <div className="space-y-2 text-xs md:text-sm text-charcoal/80 leading-relaxed font-body mb-4">
                   {item.details.map((d, di) => (
                     <p key={di}>{d}</p>
                   ))}
                 </div>
               </div>
+              {item.mapQuery && (
+                <div className="pt-3 border-t border-cherry/10 mt-2">
+                  <a
+                    href={`https://www.google.com/maps/search/${item.mapQuery}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-xs uppercase tracking-wide font-medium text-cherry hover:text-cherry-dark transition-colors"
+                  >
+                    <MapPin size={14} />
+                    <span>{isDe ? "Auf Karte ansehen" : "View on map"}</span>
+                    <ExternalLink size={12} />
+                  </a>
+                </div>
+              )}
             </div>
           </FadeUp>
         ))}
