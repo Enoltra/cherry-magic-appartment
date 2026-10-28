@@ -1,1 +1,1 @@
-// complete updated files prepared for commit
+\"use client\";\n\nimport { useEffect } from \"react\";\nimport { useRouter } from \"next/navigation\";\n\nexport default function GuestInfoPage() {\n  const router = useRouter();\n  useEffect(() => {\n    router.replace(\"/local-tips\");\n  }, [router]);\n  return null;\n}\n
