@@ -267,8 +267,8 @@ export default function LocalTipsPage() {
             </div>
             <p className="font-body text-sm text-[#353f2a]/90 max-w-xl leading-relaxed">
               {isDe
-                ? "Amna hilft Ihnen jederzeit gern weiter, ob Restaurant-Reservierungen, Taxis oder Ausflugsideen in Sarajevo. Schreiben Sie einfach per WhatsApp oder Viber an +387 62 926 781."
-                : "Amna is always just a quick message away on WhatsApp or Viber (+387 62 926 781) for restaurant recommendations, dependable taxi numbers or local pointers."}
+                ? "Amna hilft Ihnen jederzeit gern weiter, ob Restaurant-Reservierungen, Taxis oder Ausflugsideen in Sarajevo. Schreiben Sie einfach per WhatsApp oder Viber."
+                : "Amna is always just a quick message away on WhatsApp or Viber for restaurant recommendations, dependable taxi numbers or local pointers."}
             </p>
           </div>
           <a
