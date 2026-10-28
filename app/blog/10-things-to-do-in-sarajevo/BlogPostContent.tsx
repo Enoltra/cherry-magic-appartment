@@ -21,31 +21,31 @@ type Restaurant = {
 
 const restaurants: Restaurant[] = [
   {
-    name: "Cevabdzinica Zeljo",
+    name: "Ćevabdžinica Željo",
     since: "1968",
-    descEn: "The most celebrated and most-visited grill in the city. Expect a queue at lunchtime.",
-    descDe: "Der bekannteste und meistbesuchte Grill der Stadt. Mittags musst du mit einer Warteschlange rechnen.",
-    address: "Kundurdziluk 19-21, Bascarsija",
+    descEn: "Named after the historic Sarajevo football club Željezničar, Željo is arguably the most famous grill in the Balkans. Sizzling beef ćevapi are served inside a charred somun with a massive scoop of kajmak and raw onions. Expect a lively crowd and quick turnover at lunchtime.",
+    descDe: "Benannt nach dem traditionsreichen Fußballverein Željezničar, ist Željo der wohl berühmteste Grill des Balkans. Saftige Rindfleisch-Ćevapi werden im ofenfrischen Somun mit reichlich Kajmak und Zwiebeln serviert. Mittags ist es lebendig und voll.",
+    address: "Kundurdžiluk 19-21, Baščaršija",
     mapQuery: "Cevabdzinica+Zeljo+Kundurdziluk+Sarajevo",
     priceEn: "9-12 KM / portion of ten",
     priceDe: "9-12 KM / Portion mit zehn Stück",
   },
   {
-    name: "Petica Ferhatovic",
+    name: "Petica Ferhatović",
     since: "1957",
-    descEn: "The oldest still-active cevabdzinica in Sarajevo, family-run and usually less crowded than Zeljo.",
-    descDe: "Die älteste noch aktive Cevabdzinica in Sarajevo, familiengeführt und meist weniger überlaufen als Zeljo.",
-    address: "Bravadziluk, Bascarsija",
+    descEn: "Founded by legendary footballer Asim Ferhatović Hase, Petica has guarded its family recipe for decades. It is celebrated for its slightly more tender texture, traditional brass serving plates, and a welcoming old-world atmosphere along Bravadžiluk street.",
+    descDe: "Gegründet von der Fußballlegende Asim Ferhatović Hase, hütet Petica ihr Familienrezept seit Generationen. Bekannt für besonders zartes Fleisch, traditionelle Servierteller und gemütliches Ambiente in der Bravadžiluk-Gasse.",
+    address: "Bravadžiluk, Baščaršija",
     mapQuery: "Petica+Ferhatovic+Bravadziluk+Sarajevo",
     priceEn: "9-12 KM / portion of ten",
     priceDe: "9-12 KM / Portion mit zehn Stück",
   },
   {
-    name: "Cevabdzinica Nune",
+    name: "Ćevabdžinica Nune",
     since: "1966",
-    descEn: "One of the only grills in Sarajevo with a dedicated gluten-free menu, including gluten-free cevapi and sudzuk sausages, made with advance notice.",
-    descDe: "Einer der wenigen Grills in Sarajevo mit eigenem glutenfreiem Menü, inklusive glutenfreier Cevapi und Sudzuk-Wurst, auf Vorbestellung.",
-    address: "Ferhadija 12, Sarajevo 71000",
+    descEn: "A historic spot tucked right off Ferhadija pedestrian street that became a pioneer by introducing dedicated gluten-free options. With advance notice, they prepare gluten-free ćevapi and sudžuk sausages on separate grill surfaces for celiac travelers.",
+    descDe: "Ein traditionsreiches Lokal direkt an der Fußgängerzone Ferhadija, das für Zöliakie-Betroffene Pionierarbeit leistet. Nach Voranmeldung werden glutenfreie Ćevapi und Sudžuk-Würste auf separaten Grillflächen zubereitet.",
+    address: "Ferhadija 12, Sarajevo",
     mapQuery: "Cevabdzinica+Nune+Ferhadija+12+Sarajevo",
     priceEn: "From 6 KM (sausage) / from 11 KM (grill combo)",
     priceDe: "Ab 6 KM (Wurst) / ab 11 KM (Grillteller)",
@@ -70,7 +70,7 @@ export default function BlogPostContent() {
       <FadeUp delay={50}>
         <p className="font-script text-3xl md:text-4xl text-cherry mb-2 text-center">Cherry Magic</p>
         <h1 className="mb-8 text-center">
-          {en ? "10 Best Things to Do in Sarajevo" : "Die 10 besten Dinge, die du in Sarajevo tun kannst"}
+          {en ? "10 Best Things to Do in Sarajevo" : "Die 10 besten Dinge, die du in Sarajevo erleben kannst"}
         </h1>
       </FadeUp>
 
@@ -80,8 +80,8 @@ export default function BlogPostContent() {
             src="/images/blog/10_things_visit_sarajevo.jpg"
             alt={
               en
-                ? "Bascarsija old town square in Sarajevo with Sebilj fountain and Ottoman-era buildings"
-                : "Bascarsija Altstadtplatz in Sarajevo mit dem Sebilj-Brunnen und osmanischen Gebäuden"
+                ? "Baščaršija old town square in Sarajevo with Sebilj fountain and Ottoman-era buildings"
+                : "Baščaršija Altstadtplatz in Sarajevo mit dem Sebilj-Brunnen und osmanischen Gebäuden"
             }
             fill
             className="object-cover"
@@ -93,17 +93,17 @@ export default function BlogPostContent() {
       <FadeUp delay={150}>
         <p className="font-body text-charcoal/80 leading-relaxed mb-4">
           {en
-            ? "Sarajevo rewards travelers who take their time. Between the Ottoman old town, the scars and stories of recent history, and the green hills surrounding the city, there's far more here than a single afternoon can cover. This guide walks through the ten best things to do in Sarajevo, with practical details on prices, addresses, and how to get to each one, plus where to eat the best cevapi in town, including a gluten-free option."
-            : "Sarajevo belohnt Reisende, die sich Zeit nehmen. Zwischen der osmanischen Altstadt, den Spuren der jüngeren Geschichte und den grünen Hügeln rund um die Stadt gibt es hier weit mehr, als ein einzelner Nachmittag abdecken kann. Dieser Guide führt dich durch die zehn besten Aktivitäten in Sarajevo, mit Preisen, Adressen und Anfahrt, sowie den besten Cevapi-Adressen der Stadt, inklusive einer glutenfreien Option."}
+            ? "Sarajevo rewards travelers who slow down and listen. Few cities on earth pack such layered civilizational history into a walkable valley: Ottoman stone domes give way to neoclassical Austro-Hungarian facades in the space of a single street corner. Here, the muezzin's call to prayer intertwines with church bells, and centuries-old copper craftsmanship thrives beside vibrant modern cafe culture."
+            : "Sarajevo belohnt Reisende, die sich Zeit nehmen. Nur wenige Städte weltweit vereinen so viele geschichtliche Epochen in einem einzigen Tal: Osmanische Kuppeln gehen nahtlos in österreichisch-ungarische Prachtbauten über. Hier klingen Gebetsrufe und Kirchenglocken nebeneinander, während jahrhundertealtes Handwerk und moderne Kaffeehauskultur Hand in Hand gehen."}
         </p>
         <p className="font-body text-charcoal/80 leading-relaxed mb-12">
           {en ? (
             <>
-              If you're staying at{" "}
+              Staying at{" "}
               <Link href="/" className="text-cherry underline hover:text-cherry-dark">
                 Cherry Magic Apartment
               </Link>
-              , you're within easy walking distance or a short tram ride of nearly everything on this list.
+              , you are nestled in a peaceful, green residential pocket in Višnjik, just a gentle downhill stroll from the lively historical quarter.
             </>
           ) : (
             <>
@@ -111,7 +111,7 @@ export default function BlogPostContent() {
               <Link href="/" className="text-cherry underline hover:text-cherry-dark">
                 Cherry Magic Apartment
               </Link>{" "}
-              wohnst, erreichst du fast alles auf dieser Liste bequem zu Fuß oder mit einer kurzen Straßenbahnfahrt.
+              wohnst, genießt du die grüne Ruhe des Viertels Višnjik und erreichst die historische Altstadt bequem zu Fuß in wenigen Minuten bergab.
             </>
           )}
         </p>
@@ -120,29 +120,35 @@ export default function BlogPostContent() {
       {/* 1. Bascarsija */}
       <FadeUp delay={0}>
         <h3 className="!text-lg !text-cherry mb-2">
-          {en ? "1. Wander Bascarsija, the Old Bazaar" : "1. Bummle durch Bascarsija, den alten Basar"}
+          {en ? "1. Wander Baščaršija & Drink from the Sebilj" : "1. Bummle durch die Baščaršija & trinke am Sebilj"}
         </h3>
-        <p className="font-body text-charcoal/80 leading-relaxed mb-2">
+        <p className="font-body text-charcoal/80 leading-relaxed mb-3">
           {en
-            ? "Start in the heart of the Ottoman old town. Cobbled lanes, copper workshops, and the wooden Sebilj fountain make Bascarsija the most atmospheric place to begin any visit to Sarajevo. It's free to wander, open all day, and easily reached by tram lines 1, 2, and 3 from the city center."
-            : "Beginne im Herzen der osmanischen Altstadt. Kopfsteinpflasterwege, Kupferwerkstätten und der hölzerne Sebilj-Brunnen machen Bascarsija zum stimmungsvollsten Ausgangspunkt für jeden Besuch. Der Eintritt ist frei, ganztägig geöffnet und mit den Straßenbahnlinien 1, 2 und 3 leicht erreichbar."}
+            ? "Founded in the mid-15th century by Isa-Beg Ishaković, Baščaršija was the Ottoman trading powerhouse of the western Balkans. Its network of alleys was originally divided by craft guild: Kazandžiluk for coppersmiths whose rhythmic hammering still echoes today, Sarači for leatherworkers, and Bravadžiluk for metalworkers and cooks. At its northern entrance stands the iconic wooden Sebilj fountain, built in pseudo-Moorish style in 1753. Local lore promises that whoever drinks from its carved wooden faucets is destined to return to Sarajevo one day."
+            : "Gegründet im 15. Jahrhundert von Isa-Beg Ishaković, war die Baščaršija das wirtschaftliche Herz des osmanischen Balkans. Die Gassen waren traditionell nach Zünften geordnet: Kazandžiluk für Kupferschmiede, deren Hämmern bis heute durch die Straßen hallt, Sarači für Lederhandwerker und Bravadžiluk für Schlosser und Köche. Am Marktplatz steht der berühmte Sebilj-Brunnen aus dem Jahr 1753. Einer alten Legende nach kehrt jeder, der aus diesem Brunnen trinkt, eines Tages nach Sarajevo zurück."}
         </p>
-        <p className="font-body text-charcoal/60 text-sm leading-relaxed mb-8">
-          {en
-            ? "Good to know: most of the cevapi grills, coffee houses, and craft shops in this guide are within a five-minute walk of the Sebilj fountain."
-            : "Gut zu wissen: Die meisten Cevapi-Grills, Cafés und Handwerksläden in diesem Guide liegen innerhalb von fünf Gehminuten vom Sebilj-Brunnen."}
+        <p className="font-body text-charcoal/60 text-sm leading-relaxed mb-8 flex items-center gap-2">
+          <MapPin size={16} className="text-cherry" />
+          <a
+            href="https://www.google.com/maps/search/Sebilj+Bascarsija+Sarajevo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-cherry underline hover:text-cherry-dark inline-flex items-center gap-1"
+          >
+            {en ? "View on map" : "Auf Karte ansehen"} <ExternalLink size={12} />
+          </a>
         </p>
       </FadeUp>
 
       {/* 2. Tunnel of Hope */}
       <FadeUp delay={0}>
         <h3 className="!text-lg !text-cherry mb-2">
-          {en ? "2. Visit the Sarajevo Tunnel of Hope" : "2. Besuche den Tunnel der Hoffnung"}
+          {en ? "2. Visit the Sarajevo Tunnel of Hope (Tunel Spasa)" : "2. Besuche den Tunnel der Hoffnung (Tunel Spasa)"}
         </h3>
         <p className="font-body text-charcoal/80 leading-relaxed mb-3">
           {en
-            ? "A moving, essential piece of the city's recent history. The preserved tunnel section and museum tell the story of the 1990s Siege of Sarajevo, the longest siege of a capital city in modern history, in a way no book can."
-            : "Ein bewegendes, wichtiges Stück der jüngeren Geschichte der Stadt. Der erhaltene Tunnelabschnitt und das Museum erzählen die Geschichte der Belagerung Sarajevos in den 1990er Jahren, der längsten Belagerung einer Hauptstadt in der modernen Geschichte."}
+            ? "During the 1,425-day Siege of Sarajevo (1992-1996), the longest siege of a capital city in modern military history, the city was completely encircled by artillery. In absolute secrecy, Bosnian volunteers hand-dug an 800-meter tunnel beneath the airport runway using only picks and shovels. Connecting the besieged city to Bosnian-held territory outside, this narrow underground artery kept Sarajevo alive with food, fuel, weapons, and medical aid. Today, the Kolar family house in Butmir preserves a 25-meter tunnel segment and authentic artifacts."
+            : "Während der 1.425 Tage dauernden Belagerung von Sarajevo in den 1990er Jahren war die Stadt vollständig von feindlichen Kräften umschlossen. Unter strengster Geheimhaltung gruben Freiwillige in monatelanger Handarbeit einen 800 Meter langen Tunnel unter der Landebahn des Flughafens. Dieser schmale Durchgang wurde zur lebensrettenden Ader für Nahrung, Medikamente und Strom. Heute bewahrt das Museum im Haus der Familie Kolar ein begehbares Teilstück und eindrucksvolle Originaldokumente."}
         </p>
         <ul className="font-body text-charcoal/80 text-sm leading-relaxed space-y-1 mb-8">
           <li className="flex items-start gap-2">
@@ -155,25 +161,15 @@ export default function BlogPostContent() {
                 rel="noopener noreferrer"
                 className="text-cherry underline hover:text-cherry-dark inline-flex items-center gap-1"
               >
-                {en ? "view on map" : "auf Karte ansehen"} <ExternalLink size={12} />
+                {en ? "View on map" : "Auf Karte ansehen"} <ExternalLink size={12} />
               </a>
             </span>
           </li>
           <li>
-            {en ? "Ticket price: " : "Eintritt: "}10 KM ({en ? "adults" : "Erwachsene"}), 5 KM ({en ? "students" : "Studenten"}) &middot;{" "}
-            <a
-              href="https://sarajevo.travel/en/things-to-do/tunnel-of-hope/180"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-cherry underline hover:text-cherry-dark"
-            >
-              {en ? "official pricing" : "offizielle Preise"}
-            </a>
+            {en ? "Ticket price: " : "Eintritt: "}10 KM ({en ? "adults" : "Erwachsene"}), 5 KM ({en ? "students" : "Studenten"})
           </li>
           <li>
-            {en
-              ? "Getting there: taxi or rideshare from the city center (about 15 minutes), or bus 32 toward the airport"
-              : "Anfahrt: Taxi oder Rideshare vom Stadtzentrum (ca. 15 Minuten) oder Bus 32 Richtung Flughafen"}
+            {en ? "Getting there: ~15 min taxi ride from city center or tram 3 to Ilidža followed by bus" : "Anfahrt: Ca. 15 Minuten per Taxi vom Zentrum oder Straßenbahn 3 bis Ilidža und weiter mit dem Bus"}
           </li>
         </ul>
       </FadeUp>
@@ -181,52 +177,43 @@ export default function BlogPostContent() {
       {/* 3. Trebevic cable car */}
       <FadeUp delay={0}>
         <h3 className="!text-lg !text-cherry mb-2">
-          {en ? "3. Ride the Trebevic Cable Car" : "3. Fahre mit der Trebevic-Seilbahn"}
+          {en ? "3. Ride the Trebević Cable Car & Olympic Bobsled Track" : "3. Fahre mit der Trebević-Seilbahn zur Olympia-Bobbahn"}
         </h3>
         <p className="font-body text-charcoal/80 leading-relaxed mb-3">
           {en
-            ? "Rebuilt in 2018 after decades out of service, the cable car whisks you up Mount Trebevic in under nine minutes for sweeping views over the whole city and the abandoned 1984 Winter Olympics bobsled track."
-            : "2018 nach jahrzehntelangem Stillstand wieder aufgebaut, bringt dich die Seilbahn in unter neun Minuten auf den Berg Trebevic, mit weitem Blick über die Stadt und die verlassene Bob-Olympiabahn von 1984."}
+            ? "Originally inaugurated in 1959, the Trebević cable car was a beloved civic symbol until its destruction during the 1990s war. Its triumphant reopening in 2018 marked a major milestone in Sarajevo's peacetime renaissance. In just under nine minutes, sleek glass gondolas glide from the historic Bistrik neighborhood up to 1,160 meters. At the summit, dense pine forests surround the concrete remains of the 1984 Winter Olympics bobsled track, now globally famous as an open-air canvas for street art and graffiti."
+            : "Erstmals 1959 eröffnet, war die Seilbahn auf den Trebević das Wahrzeichen für Wochenendausflüge, bis sie im Krieg zerstört wurde. Ihre Wiedereröffnung im Jahr 2018 galt als emotionaler Meilenstein der Stadtgeschichte. In knapp neun Minuten gleiten die Gondeln aus dem Stadtteil Bistrik auf 1.160 Meter Höhe. Oben angekommen, führen Waldwege zur verlassenen Bobbahn der Olympischen Winterspiele von 1984, die heute weltweit als monumentale Freiluftgalerie für Graffiti bekannt ist."}
         </p>
         <ul className="font-body text-charcoal/80 text-sm leading-relaxed space-y-1 mb-8">
           <li className="flex items-start gap-2">
             <MapPin size={16} className="mt-0.5 shrink-0 text-cherry" />
             <span>
-              {en ? "Address: " : "Adresse: "}Hrvatin bb, Bistrik ({en ? "lower station" : "Talstation"}) &middot;{" "}
+              {en ? "Address: " : "Adresse: "}Hrvatin bb, Bistrik &middot;{" "}
               <a
                 href="https://www.google.com/maps/search/Trebevic+Cable+Car+Hrvatin+Bistrik+Sarajevo"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-cherry underline hover:text-cherry-dark inline-flex items-center gap-1"
               >
-                {en ? "view on map" : "auf Karte ansehen"} <ExternalLink size={12} />
+                {en ? "View on map" : "Auf Karte ansehen"} <ExternalLink size={12} />
               </a>
             </span>
           </li>
           <li>
-            {en ? "Ticket price: " : "Preis: "}30 KM {en ? "return" : "hin & zurück"} / 20 KM {en ? "one-way for foreign visitors" : "einfach für ausländische Besucher"}; 6 KM / 4 KM {en ? "for BiH residents" : "für Einwohner von BiH"} &middot;{" "}
-            <a
-              href="https://www.zicara.ba/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-cherry underline hover:text-cherry-dark"
-            >
-              {en ? "official operator" : "offizieller Betreiber"}
-            </a>
+            {en ? "Ticket price: 30 KM return / 20 KM one-way (foreign visitors)" : "Fahrpreis: 30 KM hin & zurück / 20 KM Einzelfahrt (Besucher)"}
           </li>
-          <li>{en ? "Hours: typically 09:00-17:00, extended in summer" : "Öffnungszeiten: meist 09:00-17:00 Uhr, im Sommer verlängert"}</li>
         </ul>
       </FadeUp>
 
       {/* 4. Cevapi restaurants */}
       <FadeUp delay={0}>
         <h3 className="!text-lg !text-cherry mb-2">
-          {en ? "4. Try Cevapi at a Local Grill" : "4. Probiere Cevapi in einem lokalen Grillrestaurant"}
+          {en ? "4. Taste Authentic Sarajevo Ćevapi" : "4. Probiere echte Sarajevoer Ćevapi"}
         </h3>
         <p className="font-body text-charcoal/80 leading-relaxed mb-6">
           {en
-            ? "Sarajevo's signature dish: small, hand-rolled grilled minced-meat rolls served in soft somun bread with raw onion and kajmak, a rich clotted cream. A portion runs roughly 9-15 KM depending on where you go. Here are three of the best spots, including one with a full gluten-free menu."
-            : "Das Wahrzeichen-Gericht Sarajevos: kleine, handgerollte gegrillte Hackfleischrollchen, serviert in weichem Somun-Brot mit roher Zwiebel und Kajmak, einer reichhaltigen Sahne. Eine Portion kostet je nach Lokal etwa 9-15 KM. Hier sind drei der besten Adressen, inklusive einer mit vollständig glutenfreiem Menü."}
+            ? "In Bosnia, ćevapi are not simply street food; they are a culinary institution with strict regional standards. Sarajevo ćevapi are made exclusively from quality beef (sometimes blended with lamb), seasoned with only garlic and salt, and grilled over charcoal. They are served nestled inside a warm, grid-patterned somun bread with heaps of finely diced raw onions and a generous dollop of rich kajmak clotted cream. Order 'deset u pola' (ten pieces in a half somun) for the classic local experience."
+            : "In Bosnien sind Ćevapi kein Fast Food, sondern gelebtes Kulturgut. Die Sarajevo-Variante wird traditionell aus reinem Rindfleisch (teils mit Lamm verfeinert) zubereitet, puristisch nur mit Salz und Knoblauch gewürzt und über Holzkohle gegrillt. Serviert werden sie in ofenfrischem Somun-Fladenbrot mit feingehackten Zwiebeln und cremigem Kajmak. Bestelle 'deset u pola' (zehn Stück im halben Brot) für das authentische Erlebnis."}
         </p>
 
         <div className="space-y-4 mb-10">
@@ -278,12 +265,12 @@ export default function BlogPostContent() {
       {/* 5. Latin Bridge */}
       <FadeUp delay={0}>
         <h3 className="!text-lg !text-cherry mb-2">
-          {en ? "5. See the Latin Bridge" : "5. Sieh dir die Lateinerbrücke an"}
+          {en ? "5. Stand at the Latin Bridge (World History Crossroads)" : "5. Stehe an der Lateinerbrücke (Wendepunkt der Weltgeschichte)"}
         </h3>
-        <p className="font-body text-charcoal/80 leading-relaxed mb-2">
+        <p className="font-body text-charcoal/80 leading-relaxed mb-3">
           {en
-            ? "The site of the June 1914 assassination that triggered the First World War, right in the city center next to the Miljacka river. Free to visit, and a five-minute walk from Bascarsija."
-            : "Der Ort des Attentats vom Juni 1914, das den Ersten Weltkrieg auslöste, direkt im Stadtzentrum am Fluss Miljacka. Der Eintritt ist frei, fünf Gehminuten von Bascarsija entfernt."}
+            ? "Spanning the Miljacka river since the Ottoman era, this stone bridge became the catalyst for twentieth-century modern history. On June 28, 1914, nineteen-year-old Gavrilo Princip stepped forward on this riverbank and shot Archduke Franz Ferdinand of Austria and his wife Sophie, setting in motion the domino chain that started the First World War. Directly on the corner stands the Sarajevo Museum 1878-1918, offering an unvarnished examination of the Austro-Hungarian era and the assassination."
+            : "Diese steinerne Bogenbrücke über die Miljacka stammt aus der osmanischen Epoche und wurde zum Schauplatz eines weltgeschichtlichen Wendepunkts. Am 28. Juni 1914 erschoss der junge Gavrilo Princip hier Erzherzog Franz Ferdinand und dessen Gemahlin Sophie, was den Ersten Weltkrieg auslöste. Im Eckgebäude direkt an der Brücke beleuchtet das Museum Sarajevo 1878-1918 die habsburgische Ära und die Hintergründe des Attentats."}
         </p>
         <p className="font-body text-charcoal/60 text-sm leading-relaxed mb-8 flex items-center gap-2">
           <MapPin size={16} className="text-cherry" />
@@ -301,66 +288,110 @@ export default function BlogPostContent() {
       {/* 6. Gazi Husrev-beg Mosque */}
       <FadeUp delay={0}>
         <h3 className="!text-lg !text-cherry mb-2">
-          {en ? "6. Explore the Gazi Husrev-beg Mosque" : "6. Erkunde die Gazi-Husrev-Beg-Moschee"}
+          {en ? "6. Marvel at the Gazi Husrev-beg Mosque" : "6. Erkunde die Gazi-Husrev-Beg-Moschee"}
         </h3>
-        <p className="font-body text-charcoal/80 leading-relaxed mb-2">
+        <p className="font-body text-charcoal/80 leading-relaxed mb-3">
           {en
-            ? "One of the finest examples of Ottoman architecture in the Balkans, still an active place of worship in the middle of the old town. Modest dress is required, and headscarves are available for visitors at the entrance."
-            : "Eines der schönsten Beispiele osmanischer Architektur auf dem Balkan, noch immer eine aktive Gebetsstätte mitten in der Altstadt. Angemessene Kleidung ist erforderlich, Kopftücher werden am Eingang bereitgestellt."}
+            ? "Commissioned in 1530 by governor Gazi Husrev-beg and designed by the master Ottoman architect Acem Esir Ali, this is regarded as the architectural crown jewel of Islamic heritage in the western Balkans. It was historically the first mosque in the world to introduce electric lighting in 1898. Its courtyard features an ornate carved fountain (šadrvan) and a centuries-old clock tower (Sahat-kula) that still keeps lunar time. The mosque sits just steps from the Catholic Sacred Heart Cathedral, the Old Orthodox Church, and the Ashkenazi Synagogue, earning Sarajevo its enduring title as the 'Jerusalem of Europe.'"
+            : "Erbaut im Jahr 1530 unter Statthalter Gazi Husrev-beg und entworfen von Hofarchitekt Acem Esir Ali, gilt dieses Bauwerk als Meisterwerk osmanischer Baukunst auf dem Balkan. Bemerkenswerter historischer Fakt: Sie war 1898 die erste Moschee weltweit mit elektrischem Licht. Im friedlichen Innenhof plätschert der steinerne Šadrvan-Brunnen neben dem Uhrturm (Sahat-kula), der die Zeit nach Mondphasen anzeigt. Nur wenige Schritte entfernt stehen katholische Kathedrale, orthodoxe Kirche und Synagoge, Symbol für Sarajevos Ruf als 'Jerusalem Europas'."}
         </p>
-        <p className="font-body text-charcoal/60 text-sm leading-relaxed mb-8">
-          {en ? "Small entrance fee (a few KM), free during prayer times." : "Kleiner Eintritt (wenige KM), während der Gebetszeiten kostenlos."}
+        <p className="font-body text-charcoal/60 text-sm leading-relaxed mb-8 flex items-center gap-2">
+          <MapPin size={16} className="text-cherry" />
+          <a
+            href="https://www.google.com/maps/search/Gazi+Husrev-beg+Mosque+Sarajevo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-cherry underline hover:text-cherry-dark inline-flex items-center gap-1"
+          >
+            {en ? "View on map" : "Auf Karte ansehen"} <ExternalLink size={12} />
+          </a>
         </p>
       </FadeUp>
 
       {/* 7. Mount Igman */}
       <FadeUp delay={0}>
         <h3 className="!text-lg !text-cherry mb-2">
-          {en ? "7. Hike or Picnic on Mount Igman" : "7. Wandere oder picknicke auf dem Berg Igman"}
+          {en ? "7. Escape to Mount Igman's Pine Forests" : "7. Erlebe die Gebirgswälder auf dem Berg Igman"}
         </h3>
-        <p className="font-body text-charcoal/80 leading-relaxed mb-8">
+        <p className="font-body text-charcoal/80 leading-relaxed mb-3">
           {en
-            ? "A short drive from the city, Igman offers pine forests, hiking trails, and a peaceful escape from the summer heat, plus more 1984 Olympic infrastructure, including the ski jump towers. Best reached by taxi or rideshare, about 30 minutes from the city center."
-            : "Eine kurze Fahrt von der Stadt entfernt bietet der Igman Kiefernwälder, Wanderwege und eine ruhige Auszeit von der Sommerhitze, dazu weitere Olympia-Infrastruktur von 1984, darunter die Skisprungschanzen. Am besten mit Taxi oder Rideshare erreichbar, etwa 30 Minuten vom Zentrum."}
+            ? "Rising to 1,502 meters southwest of the city, Mount Igman is famous for its pure, highly oxygenated mountain air and thick fir groves. During the 1984 Winter Olympics, Igman hosted Nordic skiing and the dramatic 70-meter and 90-meter ski jumping events at Malo Polje. It also holds deep historical resonance as the site of the legendary 1942 WWII partisan Igman March through sub-zero blizzards. In summer, it is the city's favorite retreat for cycling, family picnics, and cool mountain breezes."
+            : "Südwestlich der Stadt erhebt sich der Igman auf über 1.500 Meter Höhe. Er ist bekannt für seine sauerstoffreiche Waldluft und ausgedehnte Nadelwälder. Bei den Olympischen Spielen 1984 fanden hier die nordischen Disziplinen und das spektakuläre Skispringen auf den Schanzen von Malo Polje statt. Geschichtlich erinnert zudem das Denkmal an den legendären Partisanenmarsch im Eiswinter 1942. Im Sommer ist der Berg ein beliebtes Ziel für Wanderungen, Mountainbiketouren und kühle Erholung."}
+        </p>
+        <p className="font-body text-charcoal/60 text-sm leading-relaxed mb-8 flex items-center gap-2">
+          <MapPin size={16} className="text-cherry" />
+          <a
+            href="https://www.google.com/maps/search/Mount+Igman+Sarajevo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-cherry underline hover:text-cherry-dark inline-flex items-center gap-1"
+          >
+            {en ? "View on map" : "Auf Karte ansehen"} <ExternalLink size={12} />
+          </a>
         </p>
       </FadeUp>
 
       {/* 8. Historical Museum */}
       <FadeUp delay={0}>
         <h3 className="!text-lg !text-cherry mb-2">
-          {en ? "8. Browse the Historical Museum of Bosnia and Herzegovina" : "8. Besuche das Historische Museum von Bosnien und Herzegowina"}
+          {en ? "8. Discover the Historical Museum of Bosnia & Herzegovina" : "8. Besuche das Historische Museum von Bosnien und Herzegowina"}
         </h3>
-        <p className="font-body text-charcoal/80 leading-relaxed mb-2">
+        <p className="font-body text-charcoal/80 leading-relaxed mb-3">
           {en
-            ? "A candid, well-curated look at the Siege of Sarajevo and the country's 20th-century history, told through everyday objects rather than dry exhibits."
-            : "Ein ehrlicher, gut kuratierter Blick auf die Belagerung von Sarajevo und die Geschichte des Landes im 20. Jahrhundert, erzählt anhand von Alltagsgegenständen statt trockener Ausstellungsstücke."}
+            ? "Housed in a striking modernist cube near the former Sniper Alley, this museum bypasses dry timelines to present human truth. Its acclaimed permanent exhibition, 'Sarajevo Under Siege,' illustrates how ordinary citizens survived years cut off from utilities: handcrafted wood stoves built from artillery shell casings, homemade candles, improvised battery systems, and children's handwritten diaries. It is raw, moving, and an essential testament to the indomitable resilience of Sarajevo's people."
+            : "Untergebracht in einem markanten brutalistischen Bauwerk nahe der einstigen 'Sniper Alley', widmet sich dieses Museum dem menschlichen Überleben. Die Dauerausstellung 'Sarajevo unter Belagerung' zeigt das improvisierte Alltagsleben ohne Wasser, Strom und Gas: selbstgebaute Öfen aus Granatenhülsen, Notlichter, erfinderische Wasserfilter und Tagebücher von Kindern. Eine zutiefst berührende Hommage an die unzerstörbare Würde und Menschlichkeit der Bürger."}
         </p>
-        <p className="font-body text-charcoal/60 text-sm leading-relaxed mb-8">
-          {en ? "Address: Zmaja od Bosne 5. Ticket price: around 5 KM." : "Adresse: Zmaja od Bosne 5. Eintritt: etwa 5 KM."}
-        </p>
+        <ul className="font-body text-charcoal/80 text-sm leading-relaxed space-y-1 mb-8">
+          <li className="flex items-start gap-2">
+            <MapPin size={16} className="mt-0.5 shrink-0 text-cherry" />
+            <span>
+              {en ? "Address: " : "Adresse: "}Zmaja od Bosne 5 &middot;{" "}
+              <a
+                href="https://www.google.com/maps/search/Historical+Museum+of+Bosnia+and+Herzegovina+Sarajevo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-cherry underline hover:text-cherry-dark inline-flex items-center gap-1"
+              >
+                {en ? "View on map" : "Auf Karte ansehen"} <ExternalLink size={12} />
+              </a>
+            </span>
+          </li>
+          <li>{en ? "Ticket price: ~5 KM" : "Eintritt: Ca. 5 KM"}</li>
+        </ul>
       </FadeUp>
 
       {/* 9. Coffee */}
       <FadeUp delay={0}>
         <h3 className="!text-lg !text-cherry mb-2">
-          {en ? "9. Drink Coffee the Bosnian Way" : "9. Trinke Kaffee auf bosnische Art"}
+          {en ? "9. Savor the Traditional Bosnian Coffee Ritual (Bosanska Kahva)" : "9. Genieße die traditionelle bosnische Kaffee-Zeremonie"}
         </h3>
-        <p className="font-body text-charcoal/80 leading-relaxed mb-8">
+        <p className="font-body text-charcoal/80 leading-relaxed mb-3">
           {en
-            ? "Slow down for a dzezva of Bosnian coffee with a piece of rahat lokum. It's a ritual, not a quick espresso; the coffee is poured slowly and sipped over conversation. Any kafana in Bascarsija will do, it's less about which one and more about giving it the time it deserves."
-            : "Gönn dir eine Dzezva bosnischen Kaffee mit einem Stück Rahat Lokum. Es ist ein Ritual, kein schneller Espresso: Der Kaffee wird langsam eingeschenkt und in Ruhe genossen. Jede Kafana in Bascarsija eignet sich dafür, es geht weniger um den Ort als um die Zeit, die du dir dafür nimmst."}
+            ? "Never confuse Bosnian coffee with a rushed espresso or Turkish coffee; in Sarajevo, coffee is an art of patience, conversation, and mindfulness (ćejf). Finely roasted beans are boiled in a hand-hammered copper džezva and served on an engraved brass tray alongside a handleless ceramic fildžan cup, a glass of cold spring water, sugar cubes, and a delicate cube of rahat lokum (Turkish delight). Take a small nibble of the sugar cube, sip the rich foam, and let conversation unfold without looking at your watch."
+            : "Verwechsle bosnischen Kaffee niemals mit einem schnellen Espresso; in Sarajevo ist das Kaffeetrinken eine Kunst der Entschleunigung und Geselligkeit (Ćejf). Fein gemahlener Kaffee wird in einer handgeschlagenen Kupfer-Džezva aufgekocht und auf einem kunstvoll gravierten Tablett serviert: Dazu gehören die kleine henkellose Fildžan-Tasse, ein Glas kaltes Quellwasser, Würfelzucker und Rahat Lokum (Lokum-Konfekt). Man beißt ein Stück Zucker ab, nimmt einen Schluck des aromatischen Kaffees und genießt den Moment."}
+        </p>
+        <p className="font-body text-charcoal/60 text-sm leading-relaxed mb-8 flex items-center gap-2">
+          <MapPin size={16} className="text-cherry" />
+          <a
+            href="https://www.google.com/maps/search/Kazandziluk+Sarajevo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-cherry underline hover:text-cherry-dark inline-flex items-center gap-1"
+          >
+            {en ? "Recommended area: Kazandžiluk (Coppersmith street)" : "Empfohlenes Viertel: Kazandžiluk (Kupferschmiedegasse)"} <ExternalLink size={12} />
+          </a>
         </p>
       </FadeUp>
 
       {/* 10. Yellow Fortress */}
       <FadeUp delay={0}>
         <h3 className="!text-lg !text-cherry mb-2">
-          {en ? "10. Watch the Sunset from the Yellow Fortress" : "10. Beobachte den Sonnenuntergang von der Gelben Festung"}
+          {en ? "10. Catch Golden Hour from the Yellow Fortress (Žuta Tabija)" : "10. Erlebe die goldene Stunde an der Gelben Festung (Žuta Tabija)"}
         </h3>
-        <p className="font-body text-charcoal/80 leading-relaxed mb-2">
+        <p className="font-body text-charcoal/80 leading-relaxed mb-3">
           {en
-            ? "Zuta Tabija is the classic sunset spot in Sarajevo, with panoramic views over the old town's rooftops and minarets. Entry is free, and it's open daily from roughly 09:00 to 23:00."
-            : "Zuta Tabija ist der klassische Ort für den Sonnenuntergang in Sarajevo, mit Panoramablick über die Dächer und Minarette der Altstadt. Der Eintritt ist frei, täglich geöffnet von etwa 09:00 bis 23:00 Uhr."}
+            ? "Perched high on the rocky cliff above Baščaršija, the Yellow Fortress is a remnants of the fortified defensive walls built by the Ottomans in the early 18th century after Prince Eugene of Savoy set fire to the city. Today, its wide grassy terrace provides the definitive panoramic vantage point over Sarajevo's terracotta roofs, slender minarets, and the sun setting down the Miljacka valley. During the holy month of Ramadan, a historic ceremonial cannon is fired from the ramparts each evening at sunset to signal the end of the daily fast."
+            : "Erhoben über den Hängen der Altstadt liegt die Gelbe Festung (Žuta Tabija), Teil der osmanischen Festungsanlagen aus dem frühen 18. Jahrhundert nach dem verheerenden Stadtbrand von 1697. Heute ist die Festungsplattform der schönste Panoramapunkt der Stadt: Hier blickt man im Abendlicht über das Meer aus roten Ziegeldächern, die Minarette und den Flusslauf der Miljacka. Während des Fastenmonats Ramadan wird hier jeden Abend bei Sonnenuntergang zeremoniell eine Kanone abgefeuert, um das Fastenbrechen einzuläuten."}
         </p>
         <ul className="font-body text-charcoal/60 text-sm leading-relaxed space-y-1 mb-12">
           <li className="flex items-center gap-2">
@@ -376,8 +407,8 @@ export default function BlogPostContent() {
           </li>
           <li>
             {en
-              ? "Best time: just before sunset. During Ramadan, a cannon fires here at sundown, a tradition locals still gather for."
-              : "Beste Zeit: kurz vor Sonnenuntergang. Während des Ramadan wird hier bei Sonnenuntergang eine Kanone abgefeuert, eine Tradition, zu der sich noch immer Einheimische versammeln."}
+              ? "Tip: Climb the scenic stairway through the Kovači memorial cemetery about 45 minutes before sunset, grab a seat at the terrace cafe, and watch the city lights flicker on."
+              : "Tipp: Steige etwa 45 Minuten vor Sonnenuntergang über die Gassen von Kovači hinauf, nimm Platz im kleinen Festungscafé und beobachte, wie nach und nach die Lichter im Tal erwachen."}
           </li>
         </ul>
       </FadeUp>
@@ -392,8 +423,8 @@ export default function BlogPostContent() {
             </h4>
             <p className="font-body text-charcoal/70 text-sm leading-relaxed">
               {en
-                ? "Two full days covers the highlights comfortably: one day for Bascarsija, the Tunnel of Hope, and the Latin Bridge, and a second for Trebevic and the Yellow Fortress."
-                : "Zwei volle Tage reichen bequem für die Highlights: ein Tag für Bascarsija, den Tunnel der Hoffnung und die Lateinerbrücke, ein zweiter für Trebevic und die Gelbe Festung."}
+                ? "Two full days covers the highlights comfortably: one day for Baščaršija, the Tunnel of Hope, and the Latin Bridge, and a second for Trebević and the Yellow Fortress."
+                : "Zwei volle Tage reichen bequem für die Höhepunkte: ein Tag für Baščaršija, den Tunnel der Hoffnung und die Lateinerbrücke, ein zweiter für den Trebević und die Gelbe Festung."}
             </p>
           </div>
           <div>
@@ -412,18 +443,18 @@ export default function BlogPostContent() {
             </h4>
             <p className="font-body text-charcoal/70 text-sm leading-relaxed">
               {en
-                ? "Trams (lines 1, 2, 3) cover the city center well, and taxis or rideshare apps are inexpensive for trips to Trebevic, the Tunnel of Hope, or Igman."
-                : "Straßenbahnen (Linien 1, 2, 3) decken das Stadtzentrum gut ab, und Taxis oder Rideshare-Apps sind günstig für Fahrten nach Trebevic, zum Tunnel der Hoffnung oder nach Igman."}
+                ? "Trams (lines 1, 2, 3) cover the city center well, and taxis or rideshare apps are inexpensive for trips to Trebević, the Tunnel of Hope, or Igman."
+                : "Straßenbahnen (Linien 1, 2, 3) decken das Stadtzentrum gut ab, und Taxis oder Rideshare-Apps sind günstig für Fahrten nach Trebević, zum Tunnel der Hoffnung oder nach Igman."}
             </p>
           </div>
           <div>
             <h4 className="!text-base !text-charcoal mb-1">
-              {en ? "What's the best time of year to visit?" : "Was ist die beste Reisezeit?"}
+              {en ? "What is the best time of year to visit?" : "Was ist die beste Reisezeit?"}
             </h4>
             <p className="font-body text-charcoal/70 text-sm leading-relaxed">
               {en
-                ? "Late spring (May to June) and early autumn (September) offer mild weather without the summer crowds or winter cold."
-                : "Spätfrühling (Mai bis Juni) und Frühherbst (September) bieten mildes Wetter ohne die Sommerscharen oder die Winterkälte."}
+                ? "Late spring (May to June) and early autumn (September to October) offer mild weather without summer heat or winter cold."
+                : "Spätfrühling (Mai bis Juni) und Frühherbst (September bis Oktober) bieten mildes, angenehmes Reisewetter ohne extreme Sommerhitze oder Winterkälte."}
             </p>
           </div>
         </div>
