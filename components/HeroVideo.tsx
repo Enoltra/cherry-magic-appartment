@@ -9,19 +9,25 @@ export default function HeroVideo() {
     const video = videoRef.current;
     if (!video) return;
 
-    // Attempt playback immediately
-    const promise = video.play();
-    if (promise !== undefined) {
-      promise.catch(() => {
-        // Autoplay policy prevented playback, retry on first user interaction
-        const startPlay = () => {
-          video.play().catch(() => {});
-          window.removeEventListener("touchstart", startPlay);
-          window.removeEventListener("click", startPlay);
-        };
-        window.addEventListener("touchstart", startPlay, { once: true, passive: true });
-        window.addEventListener("click", startPlay, { once: true, passive: true });
-      });
+    // React's muted JSX attribute is not always mirrored to the underlying DOM property on initial mount,
+    // which leads Safari and Chrome to reject unprompted autoplay requests.
+    video.muted = true;
+    video.defaultMuted = true;
+    video.setAttribute("muted", "");
+    video.setAttribute("playsinline", "");
+
+    const playVideo = () => {
+      const promise = video.play();
+      if (promise !== undefined) {
+        promise.catch(() => {});
+      }
+    };
+
+    if (video.readyState >= 2) {
+      playVideo();
+    } else {
+      video.addEventListener("loadeddata", playVideo, { once: true });
+      video.addEventListener("canplay", playVideo, { once: true });
     }
   }, []);
 
