@@ -145,7 +145,7 @@ export default function HomePage() {
 
         <FadeUp delay={100}>
           <div className="rounded-2xl overflow-hidden bg-gray-100 max-w-sm mx-auto md:ml-auto md:mr-0">
-            <Image src="/images/host/amna-picture.jpg" alt="Amna Kurbegović, host of Cherry Magic Apartment" width={600} height={750} className="host-photo-fit" />
+            <Image src="/images/kitchen/cherry-magic-ktchen00006.jpeg" alt="Cherry Magic Apartment kitchen & dining area" width={600} height={750} className="host-photo-fit" />
           </div>
         </FadeUp>
 
